@@ -15,7 +15,6 @@ class Product extends Model
         'name', 'description', 'constructor_reference', 'connexing_reference', 'price', 'url_ecommerce'
     ];
 
-
     // Un produit est affecté à une categorie
     public function category() {
         return $this->belongsTo('App\Category');

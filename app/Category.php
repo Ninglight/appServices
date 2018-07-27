@@ -20,9 +20,14 @@ class Category extends Model
         return $this->belongsTo('App\Product');
     }*/
 
-    // Un produit est affecté à une categorie
+    // Une catégorie a plusieurs produits d'associés
     public function products() {
         return $this->hasMany('App\Product');
+    }
+
+    // Une catégorie a plusieurs attributs d'associés
+    public function attributes() {
+        return $this->hasMany('App\Attribute');
     }
 
     public static function boot() {
@@ -30,6 +35,7 @@ class Category extends Model
 
         self::deleting(function($category) {
             $category->products()->delete();
+            $category->attributes()->delete();
         });
     }
 }

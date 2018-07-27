@@ -22,6 +22,9 @@
                 <li class="nav-item {{ Request::is('products') ? 'active' : '' }}">
                     <a class="nav-link" href="{{ url("/products") }}">Produits</a>
                 </li>
+                <li class="nav-item {{ Request::is('attributes') ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ url("/attributes") }}">Attributs</a>
+                </li>
             </ul>
 
             <!-- Right Side Of Navbar -->
