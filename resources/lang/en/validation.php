@@ -132,7 +132,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Custom Validation Attributes
+    | Custom Validation Attribute
     |--------------------------------------------------------------------------
     |
     | The following language lines are used to swap attribute place-holders

@@ -8,7 +8,8 @@
             @include('components.alerts')
 
             <div class="text-center">
-                <a href="{{ url("/products/create") }}" class="btn btn-secondary my-3"><i class="fas fa-plus mr-1"></i>Créer un nouveau produit</a>
+                <a href="{{ url("/products/create") }}" class="btn btn-secondary my-3"><i class="fas fa-plus mr-1"></i>Créer
+                    un nouveau produit</a>
             </div>
 
             @if(count($products))
@@ -29,27 +30,25 @@
 
                     @foreach($products as $product)
 
-                        <a href="{{ url("/products/$product->id") }}">
-                            <tr class="table-row" data-href="{{ url("/products/$product->id") }}">
-                                <th scope="row">{{ $product->id }}</th>
-                                <td>{{ $product->brand->name }}</td>
-                                <td>{{ $product->name }}</td>
-                                <td>{{ $product->category->name }}</td>
-                                <td>{{ $product->constructor_reference }}</td>
-                                <td>{{ $product->connexing_reference }}</td>
-                                <td class="d-flex">
-                                    <a href="{{ url("/products/$product->id") }}" class="btn btn-outline-secondary">En savoir plus</a>
-                                    @if (Auth::check())
-                                        <a href="{{action('ProductController@edit', $product->id)}}" class="btn btn-warning">Modifier</a>
-                                        <form action="{{action('ProductController@destroy', $product->id)}}" method="post">
-                                            @csrf
-                                            <input name="_method" type="hidden" value="DELETE">
-                                            <button class="btn btn-danger" type="submit">Supprimer</button>
-                                        </form>
-                                    @endif
-                                </td>
-                            </tr>
-                        </a>
+                        <tr class="table-row" data-href="{{ url("/products/$product->id") }}">
+                            <th scope="row">{{ $product->id }}</th>
+                            <td>{{ $product->brand->name }}</td>
+                            <td>{{ $product->name }}</td>
+                            <td>{{ $product->category->name }}</td>
+                            <td>{{ $product->constructor_reference }}</td>
+                            <td>{{ $product->connexing_reference }}</td>
+                            <td class="d-flex">
+                                @if (Auth::check())
+                                    <a href="{{action('ProductController@edit', $product->id)}}"
+                                       class="btn btn-warning">Modifier</a>
+                                    <form action="{{action('ProductController@destroy', $product->id)}}" method="post">
+                                        @csrf
+                                        <input name="_method" type="hidden" value="DELETE">
+                                        <button class="btn btn-danger" type="submit">Supprimer</button>
+                                    </form>
+                                @endif
+                            </td>
+                        </tr>
 
                     @endforeach
 

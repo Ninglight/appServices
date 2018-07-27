@@ -8,36 +8,45 @@
             @include('components.alerts')
 
             <div class="text-center">
-                <a href="{{ url("/categories/create") }}" class="btn btn-secondary my-3"><i class="fas fa-plus mr-1"></i>Créer une offre</a>
+                <a href="{{ url("/categories/create") }}" class="btn btn-secondary my-3"><i
+                            class="fas fa-plus mr-1"></i>Créer une offre</a>
             </div>
 
             @if(count($categories))
 
-                <div class="row">
-                    <div class="card-columns">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nom</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
 
-                        @foreach($categories as $category)
+                    @foreach($categories as $category)
 
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">{{ $loop->iteration }}# {{ $category->name }}</h5>
-                                    <a href="{{ url("/categories/$category->id") }}" class="btn btn-outline-secondary">En savoir plus</a>
-                                    @if (Auth::check())
-                                        <a href="{{action('CategoryController@edit', $category->id)}}" class="btn btn-warning">Modifier</a>
-                                        <form action="{{action('CategoryController@destroy', $category->id)}}" method="post">
-                                            @csrf
-                                            <input name="_method" type="hidden" value="DELETE">
-                                            <button class="btn btn-danger" type="submit">Supprimer</button>
-                                        </form>
-                                    @endif
-                                </div>
-                            </div>
+                        <tr class="table-row" data-href="{{ url("/categories/$category->id") }}">
+                            <th scope="row">{{ $category->id }}</th>
+                            <td>{{ $category->name }}</td>
+                            <td class="d-flex">
+                                @if (Auth::check())
+                                    <a href="{{action('ProductController@edit', $category->id)}}"
+                                       class="btn btn-warning">Modifier</a>
+                                    <form action="{{action('ProductController@destroy', $category->id)}}" method="post">
+                                        @csrf
+                                        <input name="_method" type="hidden" value="DELETE">
+                                        <button class="btn btn-danger" type="submit">Supprimer</button>
+                                    </form>
+                                @endif
+                            </td>
+                        </tr>
 
-                        @endforeach
+                    @endforeach
 
-                    </div>
+                    </tbody>
+                </table>
 
-                </div>
 
             @else
 
