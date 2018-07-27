@@ -25,6 +25,9 @@
                 <li class="nav-item {{ Request::is('attributes') ? 'active' : '' }}">
                     <a class="nav-link" href="{{ url("/attributes") }}">Attributs</a>
                 </li>
+                <li class="nav-item {{ Request::is('default_values') ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ url("/default_values") }}">Valeur par défaut</a>
+                </li>
             </ul>
 
             <!-- Right Side Of Navbar -->

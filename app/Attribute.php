@@ -19,4 +19,17 @@ class Attribute extends Model
     public function category() {
         return $this->belongsTo('App\Category');
     }
+
+    // Une catégorie a plusieurs attributs d'associés
+    public function default_value() {
+        return $this->hasMany('App\Attribute');
+    }
+
+    public static function boot() {
+        parent::boot();
+
+        self::deleting(function($attribute) {
+            $attribute->default_value()->delete();
+        });
+    }
 }

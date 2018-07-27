@@ -19,4 +19,5 @@ Route::resource('categories','CategoryController');
 Route::resource('brands','BrandController');
 Route::resource('products','ProductController');
 Route::resource('attributes','AttributeController');
+Route::resource('default_values','DefaultValueController');
 Auth::routes();
