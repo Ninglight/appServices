@@ -19,6 +19,9 @@
                 <li class="nav-item {{ Request::is('brands') ? 'active' : '' }}">
                     <a class="nav-link" href="{{ url("/brands") }}">Marques</a>
                 </li>
+                <li class="nav-item {{ Request::is('products') ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ url("/products") }}">Produits</a>
+                </li>
             </ul>
 
             <!-- Right Side Of Navbar -->

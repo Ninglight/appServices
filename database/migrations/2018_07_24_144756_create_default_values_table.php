@@ -15,7 +15,7 @@ class CreateDefaultValuesTable extends Migration
     {
         Schema::create('default_values', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('attribute_id')->reference('id')->on('attributes');
+            $table->integer('attribute_id')->reference('id')->on('attributes')->onDelete('cascade');
             $table->string('value');
             $table->timestamps();
         });

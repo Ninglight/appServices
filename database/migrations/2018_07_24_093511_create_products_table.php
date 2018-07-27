@@ -21,8 +21,8 @@ class CreateProductsTable extends Migration
             $table->string('connexing_reference')->unique();
             $table->decimal('price', 8, 2);
             $table->string('url_ecommerce')->unique();
-            $table->integer('category_id')->reference('id')->on('categories');
-            $table->integer('brand_id')->reference('id')->on('brands');
+            $table->integer('category_id')->reference('id')->on('categories')->onDelete('cascade');
+            $table->integer('brand_id')->reference('id')->on('brands')->onDelete('cascade');
             $table->timestamps();
         });
     }

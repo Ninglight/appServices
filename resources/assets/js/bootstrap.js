@@ -12,6 +12,13 @@ try {
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
+
+    window.$(document).ready(function($) {
+        $("table-row").click(function() {
+            window.document.location = $(this).data("href");
+        })
+    })
+
 } catch (e) {}
 
 /**

@@ -17,7 +17,7 @@ class CreateInformationsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('content');
-            $table->integer('question_id')->reference('id')->on('questions');
+            $table->integer('question_id')->reference('id')->on('questions')->onDelete('cascade');
             $table->timestamps();
         });
     }
