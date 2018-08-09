@@ -1792,7 +1792,7 @@ function computeStyle(data, options) {
     styles.willChange = sideA + ', ' + sideB;
   }
 
-  // Attribute
+  // Attributes
   var attributes = {
     'x-placement': data.placement
   };
@@ -4134,7 +4134,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 		}
 	}
 
-	/* Attribute
+	/* Attributes
 	---------------------------------------------------------------------- */
 
 	// Support: IE<8
@@ -13714,6 +13714,16 @@ try {
   window.$(document).ready(function ($) {
     $(".table-row").click(function () {
       window.document.location = $(this).data("href");
+    });
+
+    $('#sidebarCollapse').on('click', function () {
+      $('#sidebar').toggleClass('active');
+      $('#main').toggleClass('active');
+    });
+
+    $('#sidebarRemove').on('click', function () {
+      $('#sidebar').removeClass('active');
+      $('#main').removeClass('active');
     });
   });
 } catch (e) {}

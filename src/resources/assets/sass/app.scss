@@ -8,11 +8,237 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+// Global
+
+.left-align {
+  text-align: left;
 }
+
+.center-align {
+  text-align: center;
+}
+
+.right-align {
+  text-align: right;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  color: $primary-color;
+}
+
+.gradient-background {
+  background: #00455b; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #00455b 0%, #02264b 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #00455b 0%,#02264b 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #00455b 0%,#02264b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00455b', endColorstr='#02264b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+// Table
 
 .table tbody tr:hover {
   background-color: rgba(0, 169, 131, .2);
+}
+
+.table .btn-link {
+  padding: 0 .4rem
+}
+
+// Navigation
+
+// -- Sidenav
+
+#admin {
+
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+
+}
+
+#sidebar {
+
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  color: #fff;
+  box-shadow: 4px 2px 4px 1px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s;
+
+  a {
+    color: white;
+
+    &[data-toggle="collapse"] {
+      position: relative;
+    }
+  }
+
+  &.active {
+    margin-left: -250px;
+  }
+
+  .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+
+  .sidebar-header {
+    padding: 20px;
+    text-align: center;
+  }
+
+  ul {
+
+    &.components {
+      padding: 20px 0;
+    }
+
+    p {
+      color: #fff;
+      padding: 10px;
+    }
+
+    li a {
+      padding: 10px;
+      font-size: 1.1em;
+      display: block;
+      opacity: .8;
+
+      &:hover {
+        color: #02264B;
+        background: #fff;
+        opacity: 1;
+      }
+
+    }
+
+    li.active > a{
+      font-weight: 500;
+      opacity: 1;
+    }
+
+    ul a {
+      font-size: 0.9em !important;
+      padding-left: 30px !important;
+      background: #176584;
+    }
+
+  }
+
+}
+
+#admin #main {
+  margin-left: 250px;
+  transition: all 0.3s;
+  width: 100%;
+
+  &.active {
+    margin-left: 0;
+  }
+
+  .container {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  #sidebar {
+    width: 100%;
+    margin-left: -100%;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+
+  #sidebar > ul {
+    margin: 0 10%;
+  }
+
+  #admin #main, #admin #main.active, #admin #main .container  {
+    margin-left: 0px;
+  }
+
+  #admin #main .container h1 {
+    text-align: left;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .btn-close {
+    display: none;
+  }
+}
+
+// -- Navbar
+
+#app .navbar {
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 100vh;
+  transition: all 0.3s;
+}
+
+#app .navbar.active {
+  margin-left: -250px;
+}
+
+@media (max-width: 768px) {
+
+  #app .navbar {
+    margin-left: -250px;
+  }
+
+  #app .navbar.active {
+    margin-left: 0;
+  }
+
+}
+
+// Login
+
+.login {
+
+  width: 100%;
+  text-align: center;
+
+
+  .container {
+    height: 100vh;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+}
+
+// Cards
+
+.card-body {
+  padding: 2.25rem;
+}
+
+// Admin
+
+// Button
+
+.btn-title {
+  font-size: 1.6em;
+}
+
+.btn-close {
+  font-size: 1.3rem;
+  color: white;
+
 }

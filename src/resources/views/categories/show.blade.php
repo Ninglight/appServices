@@ -1,4 +1,4 @@
-@component('layouts.app')
+@component('layouts.admin')
 
 
     @slot('main')

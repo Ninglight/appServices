@@ -44,7 +44,7 @@ class CategoryController extends Controller
         $category->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('categories')->with(['success' => "La catégorie a bien été ajoutée"]);
+        return redirect('admin/categories')->with(['success' => "La catégorie a bien été ajoutée"]);
     }
 
     /**
@@ -89,7 +89,7 @@ class CategoryController extends Controller
         $category->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('categories')->with(['success' => "La catégorie a bien été mise à jour"]);
+        return redirect('admin/categories')->with(['success' => "La catégorie a bien été mise à jour"]);
     }
 
     /**
@@ -102,6 +102,6 @@ class CategoryController extends Controller
     {
         $category = \App\Category::find($id);
         $category->delete();
-        return redirect('categories')->with('success','La catégorie a bien été supprimée');
+        return redirect('admin/categories')->with('success','La catégorie a bien été supprimée');
     }
 }

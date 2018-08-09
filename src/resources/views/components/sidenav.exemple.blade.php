@@ -1,17 +1,15 @@
-<nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-    <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}">
-            {{ config('app.name', 'Laravel') }}
-        </a>
+<nav class="navbar navbar-expand-md navbar-light navbar-laravel align-items-start">
+    <div class="container d-flex flex-column">
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav d-flex flex-column">
                 <li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ url("/") }}">Home</a>
+                    <a class="nav-link" href="{{ url("/") }}">Tableau de bord</a>
                 </li>
                 <li class="nav-item {{ Request::is('categories') ? 'active' : '' }}">
                     <a class="nav-link" href="{{ url("/categories") }}">Categories</a>
@@ -28,15 +26,16 @@
                 <li class="nav-item {{ Request::is('default_values') ? 'active' : '' }}">
                     <a class="nav-link" href="{{ url("/default_values") }}">Valeur par défaut</a>
                 </li>
+
+                <li class="nav-item align-self-end">
+                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                </li>
             </ul>
 
-            <!-- Right Side Of Navbar -->
+            <!-- Right Side Of Navbar
             <ul class="navbar-nav ml-auto">
-                <!-- Authentication Links -->
                 @guest
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                     </li>
@@ -62,7 +61,7 @@
                         </div>
                     </li>
                 @endguest
-            </ul>
+            </ul>-->
         </div>
     </div>
 </nav>

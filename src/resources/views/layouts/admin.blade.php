@@ -2,13 +2,13 @@
 
     @slot('body')
 
-        <div id="app">
+        <div id="admin">
 
-            @include('components.navbar')
+            @include('components.sidenav')
 
-            <main class="">
+            <main id="main">
                 {{ $main }}
-            </main>"
+            </main>
         </div>
 
     @endslot

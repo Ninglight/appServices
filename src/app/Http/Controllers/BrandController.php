@@ -46,7 +46,7 @@ class BrandController extends Controller
         $brand->url_logo=$this->manageLogoBrand($request->file('logo'));
         $brand->save();
 
-        return redirect('brands')->with(['success' => "La marque a bien été ajoutée"]);
+        return redirect('admin/brands')->with(['success' => "La marque a bien été ajoutée"]);
     }
 
     /**
@@ -98,7 +98,7 @@ class BrandController extends Controller
         $brand->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('brands')->with(['success' => "La marque a bien été mise à jour"]);
+        return redirect('admin/brands')->with(['success' => "La marque a bien été mise à jour"]);
     }
 
     /**
@@ -115,7 +115,7 @@ class BrandController extends Controller
         // Destroy brand icon
         Storage::delete('public/'.$brand->url_logo);
 
-        return redirect('brands')->with('success','La marque a bien été supprimée');
+        return redirect('admin/brands')->with('success','La marque a bien été supprimée');
     }
 
 
