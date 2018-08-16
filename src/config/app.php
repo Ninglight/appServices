@@ -211,4 +211,17 @@ return [
 
     ],
 
+    'products_fields' => [
+        'name',
+        'description',
+        'constructor_reference',
+        'connexing_reference',
+        'price',
+        'url_ecommerce',
+        'external_url_link',
+        'status',
+        'category',
+        'brand',
+    ]
+
 ];

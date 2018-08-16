@@ -16,7 +16,7 @@ class CreateAnswersTable extends Migration
         Schema::create('answers', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('question_id')->reference('id')->on('questions')->onDelete('cascade');
-            $table->integer('value_id')->reference('id')->on('values')->onDelete('cascade');
+            $table->integer('default_value_id')->reference('id')->on('default_values')->onDelete('cascade');
             $table->string('value');
             $table->timestamps();
         });

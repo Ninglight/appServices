@@ -15,11 +15,6 @@ class Category extends Model
         'name'
     ];
 
-    // Une catégorie est lié à plusieurs produits
-    /*public function products() {
-        return $this->belongsTo('App\Product');
-    }*/
-
     // Une catégorie a plusieurs produits d'associés
     public function products() {
         return $this->hasMany('App\Product');
@@ -28,6 +23,11 @@ class Category extends Model
     // Une catégorie a plusieurs attributs d'associés
     public function attributes() {
         return $this->hasMany('App\Attribute');
+    }
+
+    // Une catégorie a plusieurs attributs d'associés
+    public function questions() {
+        return $this->hasMany('App\Question');
     }
 
     public static function boot() {

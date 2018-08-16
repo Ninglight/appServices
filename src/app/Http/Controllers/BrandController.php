@@ -37,8 +37,8 @@ class BrandController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required|max:255',
-            'logo' => 'required|file'
+            'name' => 'required|max:255|unique:brands',
+            'logo' => 'required|file|max:500000'
         ]);
 
         $brand= new \App\Brand;
@@ -83,7 +83,8 @@ class BrandController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'name' => 'required|max:255'
+            'name' => 'required|max:255',
+            'logo' => 'file|max:500000'
         ]);
 
         $brand= \App\Brand::find($id);

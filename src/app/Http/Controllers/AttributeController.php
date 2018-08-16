@@ -38,17 +38,25 @@ class AttributeController extends Controller
     {
         $request->validate([
             'name' => 'required|max:255',
-            'category_id' => 'required|max:255'
+            'category_id' => 'required',
+            'identification' => 'required|max:255'
         ]);
 
         $attribute= new \App\Attribute;
         $attribute->name=$request->get('name');
         $attribute->category_id=$request->get('category_id');
+        $attribute->identification=$request->get('identification');
+
+        if($request->get('assignment_multiple') === "on") {
+            $attribute->assignment_multiple = true;
+        } else {
+            $attribute->assignment_multiple = false;
+        }
 
         $attribute->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('attributes')->with(['success' => "L'attribut a bien été ajouté"]);
+        return redirect('admin/attributes')->with(['success' => "L'attribut a bien été ajouté"]);
     }
 
     /**
@@ -73,6 +81,7 @@ class AttributeController extends Controller
     {
         $attribute = \App\Attribute::find($id);
         $categories = \App\Category::all();
+
         return view('attributes.edit', ['attribute' => $attribute, 'categories' => $categories]);
     }
 
@@ -87,17 +96,25 @@ class AttributeController extends Controller
     {
         $request->validate([
             'name' => 'required|max:255',
-            'category_id' => 'required|max:255'
+            'category_id' => 'required|max:255',
+            'identification' => 'required|max:255'
         ]);
 
         $attribute= \App\Attribute::find($id);
         $attribute->name=$request->get('name');
         $attribute->category_id=$request->get('category_id');
+        $attribute->identification=$request->get('identification');
+
+        if($request->get('assignment_multiple') === "on") {
+            $attribute->assignment_multiple = true;
+        } else {
+            $attribute->assignment_multiple = false;
+        }
 
         $attribute->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('attributes')->with(['success' => "L'attribut a bien été mis à jour"]);
+        return redirect('admin/attributes')->with(['success' => "L'attribut a bien été mis à jour"]);
     }
 
     /**

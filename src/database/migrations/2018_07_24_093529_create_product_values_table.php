@@ -15,7 +15,9 @@ class CreateProductValuesTable extends Migration
     {
         Schema::create('product_values', function (Blueprint $table) {
             $table->integer('product_id')->reference('id')->on('products')->onDelete('cascade');
+            $table->integer('attribute_id')->reference('id')->on('attributes')->onDelete('cascade');
             $table->integer('default_value_id')->reference('id')->on('default_values')->onDelete('cascade');
+            $table->primary(['product_id', 'attribute_id', 'default_value_id']);
             $table->timestamps();
         });
     }

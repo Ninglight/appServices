@@ -4,11 +4,14 @@
 
         <div id="app">
 
-            @include('components.navbar')
-
             <main class="">
                 {{ $main }}
-            </main>"
+            </main>
+
+            <div class="product-list">
+
+            </div>
+
         </div>
 
     @endslot

@@ -15,11 +15,6 @@ class Brand extends Model
         'name', 'url_logo'
     ];
 
-    // Une marque est lié à plusieurs produits
-    /*public function products() {
-        return $this->belongsTo('App\Product');
-    }*/
-
     // Un produit est affecté à une categorie
     public function products() {
         return $this->hasMany('App\Product');

@@ -55,6 +55,8 @@ class ProductController extends Controller
         $product->connexing_reference=$request->get('connexing_reference');
         $product->price=$request->get('price');
         $product->url_ecommerce=$request->get('url_ecommerce');
+        $product->external_url_img=$request->get('external_url_img');
+        $product->status=$request->get('status');
         $product->category_id=$request->get('category_id');
         $product->brand_id=$request->get('brand_id');
 
@@ -99,24 +101,27 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $product= \App\Product::find($id);
+
         $request->validate([
-            'name' => 'required|max:255|unique:products',
+            'name' => 'required|max:255|unique:products,name,'.$product->id,
             'description' => 'required|max:255',
-            'constructor_reference' => 'required|max:255|unique:products',
-            'connexing_reference' => 'required|max:255|unique:products',
+            'constructor_reference' => 'required|max:255|unique:products,constructor_reference,'.$product->id,
+            'connexing_reference' => 'required|max:255|unique:products,connexing_reference,'.$product->id,
             'price' => 'required|max:255',
             'url_ecommerce' => 'required|max:255',
-            'category_id' => 'required|max:255',
-            'brand_id' => 'required|max:255',
+            'category_id' => 'required',
+            'brand_id' => 'required',
         ]);
 
-        $product= \App\Product::find($id);
         $product->name=$request->get('name');
         $product->description=$request->get('description');
         $product->constructor_reference=$request->get('constructor_reference');
         $product->connexing_reference=$request->get('connexing_reference');
         $product->price=$request->get('price');
         $product->url_ecommerce=$request->get('url_ecommerce');
+        $product->external_url_img=$request->get('external_url_img');
+        $product->status=$request->get('status');
         $product->category_id=$request->get('category_id');
         $product->brand_id=$request->get('brand_id');
 

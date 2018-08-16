@@ -3,11 +3,11 @@
     @slot('main')
 
         <div class="container">
-            <div class="mt-2 mb-2 d-flex flex-row align-items-center flex-wrap">
-                <button type="button" id="sidebarCollapse" class="btn btn-link btn-title p-2">
+            <div class="mt-2 mb-2 d-flex flex-column align-items-start flex-wrap">
+                <button type="button" id="sidebarCollapse" class="btn btn-link btn-title pl-0 hidden-md-up">
                     <i class="fas fa-bars"></i>
                 </button>
-                <h1 class="p-2">Liste de catégories</h1>
+                <h1>Liste de catégories</h1>
 
                 <a href="{{action('CategoryController@create')}}" class="btn btn-primary ml-auto p-2">
                     <i class="fas fa-plus-circle mr-1"></i>
@@ -16,10 +16,6 @@
             </div>
 
             @include('components.alerts')
-
-            <div class="text-center">
-
-            </div>
 
             @if(count($categories))
 
@@ -39,15 +35,16 @@
                             <th scope="row" class="">{{ $category->id }}</th>
                             <td class="">{{ $category->name }}</td>
                             <td class="d-flex justify-content-end right-align">
-                                @if (Auth::check())
-                                    <a href="{{action('CategoryController@edit', $category->id)}}"
-                                       class="btn btn-link"><i class="fas fa-edit"></i></a>
-                                    <form action="{{action('CategoryController@destroy', $category->id)}}" method="post">
-                                        @csrf
-                                        <input name="_method" type="hidden" value="DELETE">
-                                        <button class="btn btn-link" type="submit"><i class="fas fa-trash-alt"></i></button>
-                                    </form>
-                                @endif
+                                <a href="{{action('CategoryController@edit', $category->id)}}" class="btn btn-link">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <form action="{{action('CategoryController@destroy', $category->id)}}" method="post">
+                                    @csrf
+                                    <input name="_method" type="hidden" value="DELETE">
+                                    <button class="btn btn-link" type="submit">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </form>
                             </td>
                         </tr>
 

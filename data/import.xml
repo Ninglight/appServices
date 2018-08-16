@@ -1,0 +1,3382 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Utilisateur de Microsoft Office</Author>
+  <LastAuthor>Utilisateur de Microsoft Office</LastAuthor>
+  <Created>2018-08-12T20:39:31Z</Created>
+  <LastSaved>2018-08-13T10:26:38Z</LastSaved>
+  <Version>15.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+  <PixelsPerInch>96</PixelsPerInch>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>16540</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>460</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s16">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#FFFFFF"
+    ss:Bold="1"/>
+   <Interior ss:Color="#00ABEA" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s17">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders/>
+  </Style>
+  <Style ss:ID="s18">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders/>
+   <NumberFormat
+    ss:Format="_-* #,##0.00\ [$€-40C]_-;\-* #,##0.00\ [$€-40C]_-;_-* &quot;-&quot;??\ [$€-40C]_-;_-@_-"/>
+  </Style>
+  <Style ss:ID="s19">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom"/>
+   <Borders/>
+   <NumberFormat ss:Format="##"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="import.csv">
+  <Table ss:ExpandedColumnCount="19" ss:ExpandedRowCount="189" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="16">
+   <Column ss:Width="78"/>
+   <Column ss:Width="129"/>
+   <Column ss:AutoFitWidth="0" ss:Width="66"/>
+   <Column ss:Width="82"/>
+   <Column ss:Width="56"/>
+   <Column ss:Width="62"/>
+   <Column ss:Width="33"/>
+   <Column ss:Index="9" ss:Width="95"/>
+   <Column ss:Width="46"/>
+   <Column ss:AutoFitWidth="0" ss:Width="66"/>
+   <Column ss:Width="236"/>
+   <Column ss:Width="182"/>
+   <Column ss:Index="17" ss:AutoFitWidth="0" ss:Width="130"/>
+   <Row>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Marque</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Modèle</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Réf constructeur</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">PRIX</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Mono/Bino</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Poids</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Connexion</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Connectivité</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Garantie</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Microsoft Skype</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Styles de port</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Options</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Portée</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Talk time</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Autonomie</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Support Bruit au travail</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Nombre de micros</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">Dongle</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">GN 2100 Mono Flex</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">2126-82-04</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">178</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">40g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Contour de nuque/Contour d'oreille</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">GN 2100 Duo Flex</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">2129-82-04</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">187</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">55g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">BIZ 2300 Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">2303-820-104</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">119</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">48g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">3 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Contour de nuque/Contour d'oreille</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">BIZ 2300 Duo</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">2309-820-104</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">139</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">68g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">3 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">BIZ 2400 II Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">2406-820-204</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">189</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">195g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">3 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Contour de nuque/Contour d'oreille</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">BIZ 2400 II Duo</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">2409-820-204</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">199</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">3 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">ENTERA HW11N/A</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">79180-03</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">79</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">60g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">ENTERA HW121N/A</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">79181-03</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">99</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">60g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Supraplus HW251N/A</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">36832-41</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">129</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">49g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Supraplus HW261N/A</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">36834-41</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">156</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">49g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Encore Pro 540</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">88828-02</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">139</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">32g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête/Contour d'oreille/Contour de nuque</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Encore Pro 530</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">201500-02</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">125</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">26g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Encore Pro 510</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">89433-02</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">95</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">52g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Encore Pro 520</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">89434-02</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">159</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">74g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Encore Pro 710</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">78712-102</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">159</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">43,5g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">3 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Encore Pro 720</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">78714-102</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">179</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">61,5g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">3 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SC 630</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">504556</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">124</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">77g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SC 660</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">504557</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">209</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">110g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SC 230</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">504401</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">58g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SC 260</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">504402</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">82.9</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">86g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">QD</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">TEL ou PC ou GSM</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Evolve 20 UC Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">4993-829-209</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">40</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Evolve 20 UC Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">4999-829-209</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Evolve 20 MS Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">4993-823-109</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">40</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Evolve 20 MS Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">4999-823-109</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Evolve 30 UC Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">5393-829-209</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">68</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Evolve 30 UC Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">5399-823-209</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">78</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">200g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Evolve 30 MS Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">5393-823-109</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">68</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Evolve 30 MS Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">5399-823-109</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">78</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">200g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Evolve 40 UC Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">6393-829-209</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">89</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Evolve 40 UC Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">6399-829-209</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">99</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">260g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Evolve 40 MS Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">6393-823-109</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">89</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Evolve 40 MS Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">6399-823-109</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">99</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">260g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Evolve 80 UC Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">7899-829-209</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">329</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">650g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Evolve 80 MS Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">7899823-109</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">329</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">650g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Biz 2300 USB, UC Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">2393-829-109</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">129</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">48g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Biz 2300 USB, UC Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">2399-829-109</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">149</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">68g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Biz 2300 USB MS Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">2393-823-109</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">129</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">48g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Biz 2300 USB MS Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">2399-823-109</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">149</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">68g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Biz 2400 II USB UC Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">2496-829-309</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">189</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">51g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Biz 2400 II USB UC Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">2499-829-309</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">199</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">56g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Biz 2400 II USB MS Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">2496-823-309</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">189</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">51g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Biz 2400 II USB MS Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">2499-823-309</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">199</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">56g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">VOICE 150 UC Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">1593-829-209</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">34</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">VOICE 150 UC Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">1599-829-209</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">39</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">VOICE 150 MS Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">1593-823-109</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">34</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">VOICE 150 MS Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">1599-823-109</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">39</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">VOICE 250 UC</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">2507-829-209</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">44</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Contour d'oreille</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">VOICE 250 MS</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">2507-823-109</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">44</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Contour d'oreille</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">VOICE 550 UC Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">5593-829-209</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">55</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">VOICE 550 UC Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">5599-829-209</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">59</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">VOICE 550 MS Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">5593-823-109</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">55</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">VOICE 550 MS Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">5599-823-109</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">59</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">VOICE 750 UC Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">7593-829-409</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">69</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">VOICE 750 UC Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">7599-829-409</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">79</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">VOICE 750 MS Mono</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">7593-823-309</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">69</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">VOICE 750 MS Bino</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">7599-823-309</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">79</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C215</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">205203-02</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">37.99</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Jack 3,5</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C225</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">205204-02</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">34.99</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Jack 3,5</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C310</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">85618-02</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">39.99</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C310-M</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">85618-01</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">39.99</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C320</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">85619-02</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">49.99</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C320-M</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">85619-01</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">49.99</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C315</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">204440-02</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">70</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB/Jack 3,5</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C315-M</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">200264-01</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">70</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB/Jack 3,5</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C325</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">204446-02</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">80</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB/Jack 3,5</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C325-M</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">200263-01</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">80</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB/Jack 3,5</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire   C435</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">85800-05</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">69.989999999999995</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono/Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Contour de nuque/Contour d'oreille</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire   C435-M</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">85801-05</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">69.989999999999995</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono/Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Contour de nuque/Contour d'oreille</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C510</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">88860-01</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">89.99</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C510-M</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">88860-02</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">89.99</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C520</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">88861-01</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">99.99</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C520-M</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">88861-02</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">99.99</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C710</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">87505-02</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">139</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB/Bluetooth</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C710-M</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">87505-01</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">139</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB/Bluetooth</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C720</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">87506-12</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">149</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB/Bluetooth</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C720-M</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">87506-01</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">149</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB/Bluetooth</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C725</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">202580-01</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">179</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">PLANTRONICS </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Blackwire C725-M</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">202581-01</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">179</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SC 630 USB CTRL</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">504554</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">189</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">134g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">3 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SC 630 USB ML</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">504552</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">189</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">134g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">3 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SC 660 USB CTRL</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">504555</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">219</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">110g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">3 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SC 660 USB ML</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">504553</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">219</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">110g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">3 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SC 230 USB </Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">504403</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">105</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">58g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SC 230 USB CTRL II</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">506480</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">58g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SC 230 USB MS II</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">504407</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Mono</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">58g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SC 260 USB</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">504404</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">130</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">86g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">3 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SC 260 USB CTRL II</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">506481</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">139</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">86g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">3 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Non</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">SC 260 USB MS II</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="Number">506483</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="Number">140</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Bino</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">86g</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">USB</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">PC</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">3 ans</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oui</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">SC 40 USB CTRL</Data></Cell>
+    <Cell><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell><Data ss:Type="Number">506500</Data></Cell>
+    <Cell><Data ss:Type="Number">80</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">92g</Data></Cell>
+    <Cell><Data ss:Type="String">USB</Data></Cell>
+    <Cell><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">SC 40 USB MS</Data></Cell>
+    <Cell><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell><Data ss:Type="Number">506498</Data></Cell>
+    <Cell><Data ss:Type="Number">80</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">92g</Data></Cell>
+    <Cell><Data ss:Type="String">USB</Data></Cell>
+    <Cell><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">SC 70 USB CTRL</Data></Cell>
+    <Cell><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell><Data ss:Type="Number">506504</Data></Cell>
+    <Cell><Data ss:Type="Number">90</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">92g</Data></Cell>
+    <Cell><Data ss:Type="String">USB</Data></Cell>
+    <Cell><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">SC 70 USB MS</Data></Cell>
+    <Cell><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell><Data ss:Type="Number">506502</Data></Cell>
+    <Cell><Data ss:Type="Number">90</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">92g</Data></Cell>
+    <Cell><Data ss:Type="String">USB</Data></Cell>
+    <Cell><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">SC 75</Data></Cell>
+    <Cell><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell><Data ss:Type="Number">507085</Data></Cell>
+    <Cell><Data ss:Type="Number">99</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Jack 3,5</Data></Cell>
+    <Cell><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">SC 75 USB CTRL</Data></Cell>
+    <Cell><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell><Data ss:Type="Number">507087</Data></Cell>
+    <Cell><Data ss:Type="Number">99</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">USB</Data></Cell>
+    <Cell><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">SC 75 USB MS</Data></Cell>
+    <Cell><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell><Data ss:Type="Number">507086</Data></Cell>
+    <Cell><Data ss:Type="Number">99</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">USB</Data></Cell>
+    <Cell><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">SC 30 USB CTRL</Data></Cell>
+    <Cell><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell><Data ss:Type="Number">504548</Data></Cell>
+    <Cell><Data ss:Type="Number">55</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">82g</Data></Cell>
+    <Cell><Data ss:Type="String">USB</Data></Cell>
+    <Cell><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">SC 30 USB ML</Data></Cell>
+    <Cell><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell><Data ss:Type="Number">504546</Data></Cell>
+    <Cell><Data ss:Type="Number">55</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">82g</Data></Cell>
+    <Cell><Data ss:Type="String">USB</Data></Cell>
+    <Cell><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">SC 60 USB CTRL</Data></Cell>
+    <Cell><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell><Data ss:Type="Number">504549</Data></Cell>
+    <Cell><Data ss:Type="Number">65</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">106g</Data></Cell>
+    <Cell><Data ss:Type="String">USB</Data></Cell>
+    <Cell><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">SC 60 USB ML</Data></Cell>
+    <Cell><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell><Data ss:Type="Number">504547</Data></Cell>
+    <Cell><Data ss:Type="Number">65</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">106g</Data></Cell>
+    <Cell><Data ss:Type="String">USB</Data></Cell>
+    <Cell><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">SP10</Data></Cell>
+    <Cell><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell><Data ss:Type="Number">506047</Data></Cell>
+    <Cell><Data ss:Type="Number">159</Data></Cell>
+    <Cell><Data ss:Type="String">Speakerphone</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">USB</Data></Cell>
+    <Cell><Data ss:Type="String">PC </Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">SP10 ML</Data></Cell>
+    <Cell><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell><Data ss:Type="Number">506048</Data></Cell>
+    <Cell><Data ss:Type="Number">159</Data></Cell>
+    <Cell><Data ss:Type="String">Speakerphone</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">USB</Data></Cell>
+    <Cell><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">SP20</Data></Cell>
+    <Cell><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell><Data ss:Type="Number">506049</Data></Cell>
+    <Cell><Data ss:Type="Number">179</Data></Cell>
+    <Cell><Data ss:Type="String">Speakerphone</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">USB / jack 3,5</Data></Cell>
+    <Cell><Data ss:Type="String">PC / GSM</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">SP20 ML</Data></Cell>
+    <Cell><Data ss:Type="String">Filaire</Data></Cell>
+    <Cell><Data ss:Type="Number">506050</Data></Cell>
+    <Cell><Data ss:Type="Number">179</Data></Cell>
+    <Cell><Data ss:Type="String">Speakerphone</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">USB / jack 3,5</Data></Cell>
+    <Cell><Data ss:Type="String">PC / GSM</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">PRO 930 MONO</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">930-25-509-101</Data></Cell>
+    <Cell><Data ss:Type="Number">199</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">27g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">1 an</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">8h</Data></Cell>
+    <Cell><Data ss:Type="String">36h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">PRO 930 MONO MS</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">930-25-503-101</Data></Cell>
+    <Cell><Data ss:Type="Number">199</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">27g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">1 an</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">8h</Data></Cell>
+    <Cell><Data ss:Type="String">36h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">PRO 930 DUO</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">930-29-509-101</Data></Cell>
+    <Cell><Data ss:Type="Number">269</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">37g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">1 an</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">8h</Data></Cell>
+    <Cell><Data ss:Type="String">36h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">PRO 930 DUO MS</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">930-29-503-101</Data></Cell>
+    <Cell><Data ss:Type="Number">269</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">37g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">1 an</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">8h</Data></Cell>
+    <Cell><Data ss:Type="String">36h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">SAVI 410</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">84007-04</Data></Cell>
+    <Cell><Data ss:Type="Number">249</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">72g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">9h</Data></Cell>
+    <Cell><Data ss:Type="String">50h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">SAVI 410 - M</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">84007-02</Data></Cell>
+    <Cell><Data ss:Type="Number">249</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">72g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">9h</Data></Cell>
+    <Cell><Data ss:Type="String">50h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">SAVI 420</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">84008-04</Data></Cell>
+    <Cell><Data ss:Type="Number">279</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">94g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">9h</Data></Cell>
+    <Cell><Data ss:Type="String">50h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">SAVI 420 - M</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">84008-02</Data></Cell>
+    <Cell><Data ss:Type="Number">279</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">94g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">9h</Data></Cell>
+    <Cell><Data ss:Type="String">50h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">SAVI 430</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">82396-12</Data></Cell>
+    <Cell><Data ss:Type="Number">249</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">25g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">6h</Data></Cell>
+    <Cell><Data ss:Type="String">40h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">SAVI 430 - M</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">82397-12</Data></Cell>
+    <Cell><Data ss:Type="Number">249</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">25g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">6h</Data></Cell>
+    <Cell><Data ss:Type="String">40h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">SAVI 440</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">203946-02</Data></Cell>
+    <Cell><Data ss:Type="Number">249</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">21g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">7h</Data></Cell>
+    <Cell><Data ss:Type="String">40h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">SAVI 440 - M</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">203947-02</Data></Cell>
+    <Cell><Data ss:Type="Number">249</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">21g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">7h</Data></Cell>
+    <Cell><Data ss:Type="String">40h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">D10 USB</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">506412</Data></Cell>
+    <Cell><Data ss:Type="Number">239</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">22g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">11h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">D10 USB ML</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">506416</Data></Cell>
+    <Cell><Data ss:Type="Number">239</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">22g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">11h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">DW Office USB</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">504312</Data></Cell>
+    <Cell><Data ss:Type="Number">299</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">22g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">11h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">DW Office USB ML</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">504466</Data></Cell>
+    <Cell><Data ss:Type="Number">299</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">22g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">11h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">DW Pro 1 USB</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">504316</Data></Cell>
+    <Cell><Data ss:Type="Number">210</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">65g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">11h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">DW Pro 1 USB ML</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">504470</Data></Cell>
+    <Cell><Data ss:Type="Number">229</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">65g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">11h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">DW Pro 2 USB</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">504320</Data></Cell>
+    <Cell><Data ss:Type="Number">319</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">85g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">11h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">DW Pro 2 USB ML</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">504474</Data></Cell>
+    <Cell><Data ss:Type="Number">319</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">85g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">11h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">PRO 920 MONO</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">920-25-508-101</Data></Cell>
+    <Cell><Data ss:Type="Number">199</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">28g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Contour de nuque contour d'oreille</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">8h</Data></Cell>
+    <Cell><Data ss:Type="String">36h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">PRO 920 DUO</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">920-29-508-101</Data></Cell>
+    <Cell><Data ss:Type="Number">269</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">38g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">8h</Data></Cell>
+    <Cell><Data ss:Type="String">36h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">CS510</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">84691-02</Data></Cell>
+    <Cell><Data ss:Type="Number">299</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">72g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">9h</Data></Cell>
+    <Cell><Data ss:Type="String">60h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">CS520</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">84692-02</Data></Cell>
+    <Cell><Data ss:Type="Number">329</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">94g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">9h</Data></Cell>
+    <Cell><Data ss:Type="String">60h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">CS530</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">86305-02</Data></Cell>
+    <Cell><Data ss:Type="Number">249</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">25g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">6h</Data></Cell>
+    <Cell><Data ss:Type="String">60h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">CS540</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">84693-02</Data></Cell>
+    <Cell><Data ss:Type="Number">250</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">21g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Contour de nuque</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">7h</Data></Cell>
+    <Cell><Data ss:Type="String">60h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">C565 (pour DECT)</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">201827-02</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">22g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">7h</Data></Cell>
+    <Cell><Data ss:Type="String">40h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">D10</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">506408</Data></Cell>
+    <Cell><Data ss:Type="Number">239</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">22g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">150m</Data></Cell>
+    <Cell><Data ss:Type="String">8h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">DW Office Phone</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">504430</Data></Cell>
+    <Cell><Data ss:Type="Number">279</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">22g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">150m</Data></Cell>
+    <Cell><Data ss:Type="String">8h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">DW Pro 1 Phone</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">504434</Data></Cell>
+    <Cell><Data ss:Type="Number">299</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">65g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">150m</Data></Cell>
+    <Cell><Data ss:Type="String">8h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">DW Pro 2 Phone</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">504438</Data></Cell>
+    <Cell><Data ss:Type="Number">319</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">85g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">150m</Data></Cell>
+    <Cell><Data ss:Type="String">8h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">PRO 925 MONO</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">925-15-508-201</Data></Cell>
+    <Cell><Data ss:Type="Number">259</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">28g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">TEL + GSM</Data></Cell>
+    <Cell><Data ss:Type="String">1 an</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">100m</Data></Cell>
+    <Cell><Data ss:Type="String">12h</Data></Cell>
+    <Cell><Data ss:Type="String">150h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">Voyager Legend CS</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">88863-02</Data></Cell>
+    <Cell><Data ss:Type="Number">229</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">18g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">TEL + GSM</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">12m</Data></Cell>
+    <Cell><Data ss:Type="String">7h</Data></Cell>
+    <Cell><Data ss:Type="String">11j</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">STEALTH UC</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">5578-230-109</Data></Cell>
+    <Cell><Data ss:Type="Number">110</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">17,5g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">10m - 30m(PC)</Data></Cell>
+    <Cell><Data ss:Type="String">6h</Data></Cell>
+    <Cell><Data ss:Type="String">150h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">STEALTH UC MS</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">5578-230-309</Data></Cell>
+    <Cell><Data ss:Type="Number">110</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">17,5g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">10m - 30m(PC)</Data></Cell>
+    <Cell><Data ss:Type="String">6h</Data></Cell>
+    <Cell><Data ss:Type="String">150h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">MOTION UC</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">6630-900-141</Data></Cell>
+    <Cell><Data ss:Type="Number">160</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">17,5g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">10m - 50/120m(PC)</Data></Cell>
+    <Cell><Data ss:Type="String">6h</Data></Cell>
+    <Cell><Data ss:Type="String">360h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">MOTION UC MS</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">6630-900-341</Data></Cell>
+    <Cell><Data ss:Type="Number">160</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">17,5g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">10m - 50/120m(PC)</Data></Cell>
+    <Cell><Data ss:Type="String">6h</Data></Cell>
+    <Cell><Data ss:Type="String">360h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">PRO 935</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">935-15-509-201 </Data></Cell>
+    <Cell><Data ss:Type="Number">259</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">28g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">1 an</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">100m</Data></Cell>
+    <Cell><Data ss:Type="String">10h</Data></Cell>
+    <Cell><Data ss:Type="String">150h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">PRO 935 MS</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">935-15-503-201</Data></Cell>
+    <Cell><Data ss:Type="Number">259</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">28g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">1 an</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">100m</Data></Cell>
+    <Cell><Data ss:Type="String">10h</Data></Cell>
+    <Cell><Data ss:Type="String">150h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">EVOLVE 65 MONO</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">6593-829-409</Data></Cell>
+    <Cell><Data ss:Type="Number">155</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">79g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">30m</Data></Cell>
+    <Cell><Data ss:Type="String">10h</Data></Cell>
+    <Cell><Data ss:Type="String">15 jours</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">EVOLVE 65 MONO MS</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">6593-823-309</Data></Cell>
+    <Cell><Data ss:Type="Number">155</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">79g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">30m</Data></Cell>
+    <Cell><Data ss:Type="String">10h</Data></Cell>
+    <Cell><Data ss:Type="String">15 jours</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">EVOLVE 65 BINO</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">6599-829-409</Data></Cell>
+    <Cell><Data ss:Type="Number">165</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">111g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">30m</Data></Cell>
+    <Cell><Data ss:Type="String">10h</Data></Cell>
+    <Cell><Data ss:Type="String">15 jours</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">EVOLVE 65 BINO MS</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">6599-823-309</Data></Cell>
+    <Cell><Data ss:Type="Number">165</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">111g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">30m</Data></Cell>
+    <Cell><Data ss:Type="String">10h</Data></Cell>
+    <Cell><Data ss:Type="String">15 jours</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">Voyager Legend UC</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">87670-02</Data></Cell>
+    <Cell><Data ss:Type="Number">149</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">18g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">10m</Data></Cell>
+    <Cell><Data ss:Type="String">7h</Data></Cell>
+    <Cell><Data ss:Type="String">11 jours</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">Voyager Legend UC - M</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">87680-02</Data></Cell>
+    <Cell><Data ss:Type="Number">149</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">18g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">10m</Data></Cell>
+    <Cell><Data ss:Type="String">7h</Data></Cell>
+    <Cell><Data ss:Type="String">11 jours</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">Voyager EDGE UC</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">202310-02</Data></Cell>
+    <Cell><Data ss:Type="Number">149</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">9g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">10m - 50m</Data></Cell>
+    <Cell><Data ss:Type="String">7h</Data></Cell>
+    <Cell><Data ss:Type="String">7 jours</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">Voyager EDGE UC MS</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">202320-02</Data></Cell>
+    <Cell><Data ss:Type="Number">149</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">9g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">10m - 50m</Data></Cell>
+    <Cell><Data ss:Type="String">7h</Data></Cell>
+    <Cell><Data ss:Type="String">7 jours</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">Voyager 5200 UC</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">206110-01</Data></Cell>
+    <Cell><Data ss:Type="Number">169</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">20g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">10m - 50m</Data></Cell>
+    <Cell><Data ss:Type="String">7h</Data></Cell>
+    <Cell><Data ss:Type="String">7 jours</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">Voyager Focus UC (sans socle)</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">202652-03</Data></Cell>
+    <Cell><Data ss:Type="Number">249</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">155g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">45m</Data></Cell>
+    <Cell><Data ss:Type="String">12h</Data></Cell>
+    <Cell><Data ss:Type="String">15h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">Voyager Focus UC</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">202652-01</Data></Cell>
+    <Cell><Data ss:Type="Number">299</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">155g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">45m</Data></Cell>
+    <Cell><Data ss:Type="String">12h</Data></Cell>
+    <Cell><Data ss:Type="String">15h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">Voyager Focus UC - M (sans socle)</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">202652-04</Data></Cell>
+    <Cell><Data ss:Type="Number">249</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">155g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">45m</Data></Cell>
+    <Cell><Data ss:Type="String">12h</Data></Cell>
+    <Cell><Data ss:Type="String">15h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">Voyager Focus UC - M</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">202652-02</Data></Cell>
+    <Cell><Data ss:Type="Number">299</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">155g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">45m</Data></Cell>
+    <Cell><Data ss:Type="String">12h</Data></Cell>
+    <Cell><Data ss:Type="String">15h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">MB Pro 1 UC</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">506042</Data></Cell>
+    <Cell><Data ss:Type="Number">219</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">63g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">25m</Data></Cell>
+    <Cell><Data ss:Type="String">15h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">MB Pro 1 UC ML</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">506043</Data></Cell>
+    <Cell><Data ss:Type="Number">219</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">63g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">25m</Data></Cell>
+    <Cell><Data ss:Type="String">15h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">MB Pro 2 UC</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">506045</Data></Cell>
+    <Cell><Data ss:Type="Number">239</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">63g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">25m</Data></Cell>
+    <Cell><Data ss:Type="String">15h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">MB Pro 2 UC ML</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">506046</Data></Cell>
+    <Cell><Data ss:Type="Number">239</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">63g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">GSM + PC</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">25m</Data></Cell>
+    <Cell><Data ss:Type="String">15h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">PRO™ 9470 MONO</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">9470-26-904-101</Data></Cell>
+    <Cell><Data ss:Type="Number">379</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">36,5g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL + GSM</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">150m</Data></Cell>
+    <Cell><Data ss:Type="String">9h</Data></Cell>
+    <Cell><Data ss:Type="String">40h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">PRO™ 9465 DUO</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">9465-29-804-101</Data></Cell>
+    <Cell><Data ss:Type="Number">399</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">36,5g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL + GSM</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">150m</Data></Cell>
+    <Cell><Data ss:Type="String">9h</Data></Cell>
+    <Cell><Data ss:Type="String">40h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">MOTION OFFICE</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">6670-904-141</Data></Cell>
+    <Cell><Data ss:Type="Number">350</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">17,5g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL + GSM</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">100m</Data></Cell>
+    <Cell><Data ss:Type="String">8h</Data></Cell>
+    <Cell><Data ss:Type="String">360h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">MOTION OFFICE MS</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">6670-904-341</Data></Cell>
+    <Cell><Data ss:Type="Number">350</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">17,5g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL + GSM</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">100m</Data></Cell>
+    <Cell><Data ss:Type="String">8h</Data></Cell>
+    <Cell><Data ss:Type="String">360h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">SAVI W710</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">83545-12</Data></Cell>
+    <Cell><Data ss:Type="Number">359</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">72g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL + GSM</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">9h</Data></Cell>
+    <Cell><Data ss:Type="String">50h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">SAVI W710 - M</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">84003-02</Data></Cell>
+    <Cell><Data ss:Type="Number">359</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">72g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL + GSM</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">9h</Data></Cell>
+    <Cell><Data ss:Type="String">50h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">SAVI W720</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">83544-12</Data></Cell>
+    <Cell><Data ss:Type="Number">389</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">94g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL + GSM</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">9h</Data></Cell>
+    <Cell><Data ss:Type="String">50h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">SAVI W720 - M</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">84004-02</Data></Cell>
+    <Cell><Data ss:Type="Number">389</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">94g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL + GSM</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">9h</Data></Cell>
+    <Cell><Data ss:Type="String">50h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">SAVI W730</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">83543-12</Data></Cell>
+    <Cell><Data ss:Type="Number">359</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">25g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL + GSM</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">7h</Data></Cell>
+    <Cell><Data ss:Type="String">40h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">SAVI W730   - M</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">84002-12</Data></Cell>
+    <Cell><Data ss:Type="Number">359</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">25g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL + GSM</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">7h</Data></Cell>
+    <Cell><Data ss:Type="String">40h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">SAVI W740</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">83542-12</Data></Cell>
+    <Cell><Data ss:Type="Number">359</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">21g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL + GSM</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">7h</Data></Cell>
+    <Cell><Data ss:Type="String">50h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">SAVI W740 -   M</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">84001-12</Data></Cell>
+    <Cell><Data ss:Type="Number">359</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">21g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL + GSM</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">7h</Data></Cell>
+    <Cell><Data ss:Type="String">50h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">PRO™ 9460 MONO</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">9460-25-707-101</Data></Cell>
+    <Cell><Data ss:Type="Number">349</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">31g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="String">Serre-tête -  Contour d'oreille</Data></Cell>
+    <Cell><Data ss:Type="String">Contour de nuque</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">10h</Data></Cell>
+    <Cell><Data ss:Type="String">38h</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String"> PRO™ 9460 DUO</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">9460-29-707-101</Data></Cell>
+    <Cell><Data ss:Type="Number">369</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">34g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell><Data ss:Type="String">Contour de nuque</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">10h</Data></Cell>
+    <Cell><Data ss:Type="String">38h</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">PRO 9450 MONO</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">9450-25-507-101</Data></Cell>
+    <Cell><Data ss:Type="Number">329</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">28g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="String">Serre-tête -  Contour d'oreille</Data></Cell>
+    <Cell><Data ss:Type="String">Contour de nuque</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">10h</Data></Cell>
+    <Cell><Data ss:Type="String">46h</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">PRO 9450      DUO</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">9450-29-707-101</Data></Cell>
+    <Cell><Data ss:Type="Number">350</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">28g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="String">Serre-tête</Data></Cell>
+    <Cell><Data ss:Type="String">Contour de nuque</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">10h</Data></Cell>
+    <Cell><Data ss:Type="String">46h</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">DW Office</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">504300</Data></Cell>
+    <Cell><Data ss:Type="Number">349</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">50g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="String">Serre-tête -  Contour d'oreille</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">10h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">DW Office ML</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">504454</Data></Cell>
+    <Cell><Data ss:Type="Number">349</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">50g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="String">Serre-tête -  Contour d'oreille</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">10h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">DW Pro 1</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">504304</Data></Cell>
+    <Cell><Data ss:Type="Number">349</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">65g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">10h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">DW Pro 1 ML</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">504458</Data></Cell>
+    <Cell><Data ss:Type="Number">349</Data></Cell>
+    <Cell><Data ss:Type="String">Mono</Data></Cell>
+    <Cell><Data ss:Type="String">65g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">10h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">DW Pro 2</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">504308</Data></Cell>
+    <Cell><Data ss:Type="Number">369</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">85g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">10h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">SENNHEISER</Data></Cell>
+    <Cell><Data ss:Type="String">DW Pro 2 ML</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="Number">504462</Data></Cell>
+    <Cell><Data ss:Type="Number">369</Data></Cell>
+    <Cell><Data ss:Type="String">Bino</Data></Cell>
+    <Cell><Data ss:Type="String">85g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">PC + TEL</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">120m</Data></Cell>
+    <Cell><Data ss:Type="String">10h</Data></Cell>
+    <Cell><Data ss:Type="String">100h</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">SPEAK 510 UC (Dongle)</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">7510-409</Data></Cell>
+    <Cell><Data ss:Type="Number">159</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">300g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">Speakerphone</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">100m</Data></Cell>
+    <Cell><Data ss:Type="String">15h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">SPEAK 510 MS</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">7510-109</Data></Cell>
+    <Cell><Data ss:Type="Number">129</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">300g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">Speakerphone</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">100m</Data></Cell>
+    <Cell><Data ss:Type="String">15h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">SPEAK 510</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">7510-209</Data></Cell>
+    <Cell><Data ss:Type="Number">129</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">300g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">Speakerphone</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">100m</Data></Cell>
+    <Cell><Data ss:Type="String">15h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">SPEAK 810</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">7810-209</Data></Cell>
+    <Cell><Data ss:Type="Number">599</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">300g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">Speakerphone</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">100m</Data></Cell>
+    <Cell><Data ss:Type="String">15h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">JABRA</Data></Cell>
+    <Cell><Data ss:Type="String">SPEAK 810 - M</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">7810-109</Data></Cell>
+    <Cell><Data ss:Type="Number">599</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">300g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">Speakerphone</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">100m</Data></Cell>
+    <Cell><Data ss:Type="String">15h</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">CALISTO 620</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">86700-02</Data></Cell>
+    <Cell><Data ss:Type="Number">129</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">430g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">Speakerphone</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Non</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">50m</Data></Cell>
+    <Cell><Data ss:Type="String">7h</Data></Cell>
+    <Cell><Data ss:Type="String">5 jours</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">PLANTRONICS</Data></Cell>
+    <Cell><Data ss:Type="String">CALISTO 620 - M</Data></Cell>
+    <Cell><Data ss:Type="String">Sans Fil</Data></Cell>
+    <Cell><Data ss:Type="String">86701-02</Data></Cell>
+    <Cell><Data ss:Type="Number">129</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">430g</Data></Cell>
+    <Cell ss:Index="9"><Data ss:Type="String">Speakerphone</Data></Cell>
+    <Cell><Data ss:Type="String">2 ans</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">50m</Data></Cell>
+    <Cell><Data ss:Type="String">7h</Data></Cell>
+    <Cell><Data ss:Type="String">5 jours</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">Oui</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <VerticalResolution>0</VerticalResolution>
+   </Print>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>25</ActiveRow>
+     <ActiveCol>13</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Feuil2">
+  <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="1" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="16">
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+   </Print>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

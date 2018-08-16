@@ -1,16 +1,21 @@
-@component('layouts.app')
+@component('layouts.admin')
 
     @slot('main')
 
         <div class="container">
-            <h1 class="mt-5 mb-2 text-center">Voici la liste des produits</h1>
+            <div class="mt-2 mb-2 d-flex flex-column align-items-start flex-wrap">
+                <button type="button" id="sidebarCollapse" class="btn btn-link btn-title pl-0 hidden-md-up">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1>Liste de produits</h1>
+
+                <a href="{{action('ProductController@create')}}" class="btn btn-primary ml-auto p-2">
+                    <i class="fas fa-plus-circle mr-1"></i>
+                    Créer un produit
+                </a>
+            </div>
 
             @include('components.alerts')
-
-            <div class="text-center">
-                <a href="{{ url("/products/create") }}" class="btn btn-secondary my-3"><i class="fas fa-plus mr-1"></i>Créer
-                    un nouveau produit</a>
-            </div>
 
             @if(count($products))
 
@@ -30,23 +35,24 @@
 
                     @foreach($products as $product)
 
-                        <tr class="table-row" data-href="{{ url("/products/$product->id") }}">
+                        <tr class="table-row" data-href="{{action('ProductController@edit', $product->id)}}">
                             <th scope="row">{{ $product->id }}</th>
                             <td>{{ $product->brand->name }}</td>
                             <td>{{ $product->name }}</td>
                             <td>{{ $product->category->name }}</td>
                             <td>{{ $product->constructor_reference }}</td>
                             <td>{{ $product->connexing_reference }}</td>
-                            <td class="d-flex">
-                                @if (Auth::check())
-                                    <a href="{{action('ProductController@edit', $product->id)}}"
-                                       class="btn btn-warning">Modifier</a>
-                                    <form action="{{action('ProductController@destroy', $product->id)}}" method="post">
-                                        @csrf
-                                        <input name="_method" type="hidden" value="DELETE">
-                                        <button class="btn btn-danger" type="submit">Supprimer</button>
-                                    </form>
-                                @endif
+                            <td class="d-flex justify-content-end right-align">
+                                <a href="{{action('ProductController@edit', $product->id)}}" class="btn btn-link">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <form action="{{action('ProductController@destroy', $product->id)}}" method="post">
+                                    @csrf
+                                    <input name="_method" type="hidden" value="DELETE">
+                                    <button class="btn btn-link" type="submit">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </form>
                             </td>
                         </tr>
 

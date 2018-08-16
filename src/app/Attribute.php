@@ -20,9 +20,19 @@ class Attribute extends Model
         return $this->belongsTo('App\Category');
     }
 
-    // Une catégorie a plusieurs attributs d'associés
-    public function default_value() {
-        return $this->hasMany('App\Attribute');
+    // Un attribut à plusieurs valeurs par défaut
+    public function default_values() {
+        return $this->hasMany('App\DefaultValue');
+    }
+
+    // Un attribut à plusieurs valeurs liés aux produits
+    public function product_values() {
+        return $this->hasMany('App\ProductValue');
+    }
+
+    // Un attribut a une question d'associés
+    public function question() {
+        return $this->hasOne('App\Question');
     }
 
     public static function boot() {
@@ -30,6 +40,8 @@ class Attribute extends Model
 
         self::deleting(function($attribute) {
             $attribute->default_value()->delete();
+            $attribute->product_value()->delete();
+            $attribute->question()->delete();
         });
     }
 }

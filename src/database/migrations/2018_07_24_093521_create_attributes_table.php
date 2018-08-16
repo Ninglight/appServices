@@ -17,6 +17,8 @@ class CreateAttributesTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->integer('category_id')->reference('id')->on('categories')->onDelete('cascade');
+            $table->string('identification');
+            $table->boolean('assignment_multiple');
             $table->timestamps();
         });
     }

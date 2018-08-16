@@ -15,30 +15,52 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 Auth::routes();
 
-/*Route::get('/', 'AppController@index');*/
+// Authentication Routes...
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login');
+Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+
+// Password Reset Routes...
+Route::get('password/request', 'Auth\ForgotPasswordController@showLinkRequestForm');
+Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail');
+Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm');
+Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
 Route::prefix('admin')->group(function () {
 
+    Route::get('register', 'Auth\RegisterController@showRegistrationForm');
+    Route::post('register', 'Auth\RegisterController@register');
+
     Route::middleware(['auth'])->group(function () {
+
+        Route::view('/', 'admin');
+
+        Route::get('/categories', 'CategoryController@index');
+        Route::get('/brands', 'BrandController@index');
+        Route::get('/products', 'ProductController@index');
+        Route::get('/attributes', 'AttributeController@index');
+        Route::get('/questions', 'QuestionController@index');
+        Route::get('/users', 'UserController@index');
+        Route::get('/import', 'ImportController@index');
+
 
         Route::resource('categories','CategoryController');
         Route::resource('brands','BrandController');
         Route::resource('products','ProductController');
         Route::resource('attributes','AttributeController');
         Route::resource('default_values','DefaultValueController');
+        Route::resource('product_values','ProductValueController');
+        Route::resource('questions','QuestionController');
+        Route::resource('answers','AnswerController');
+        Route::resource('informations','InformationController');
+        Route::resource('users','UserController');
+        Route::resource('import','ImportController');
+
+        Route::post('/import_parse', 'ImportController@parseImport')->name('import_parse');
+        Route::post('/import_process', 'ImportController@processImport')->name('import_process');
 
     });
 
-    // These will juste be prefixed with "manager"
-    Route::view('/', 'admin');
-});
-
-
-Route::prefix('admin')->group(function () {
-    Route::get('users', function () {
-        print 'Salut';
-    });
 });

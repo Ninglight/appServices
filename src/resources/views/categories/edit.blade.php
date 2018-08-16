@@ -3,25 +3,34 @@
     @slot('main')
 
         <div class="container">
-            <div class="mt-2 mb-2 d-flex flex-row align-items-center flex-wrap">
-                <button type="button" id="sidebarCollapse" class="btn btn-link btn-title p-2">
+            <div class="mt-2 mb-2 d-flex flex-column align-items-start flex-wrap">
+                <button type="button" id="sidebarCollapse" class="btn btn-link btn-title pl-0 hidden-md-up">
                     <i class="fas fa-bars"></i>
                 </button>
-                <h1 class="p-2">Mettre à jour une catégorie</h1>
+                <h1>Mettre à jour une catégorie</h1>
             </div>
 
             @include('components.alerts')
 
             <div class="row">
 
-                <form class="offset-md-3 col-md-6" method="post" action="{{ action('CategoryController@update', $category->id) }}" enctype="multipart/form-data">
+                <form class="offset-md-1 col-md-6" method="post" action="{{ action('CategoryController@update', $category->id) }}" enctype="multipart/form-data">
                     @csrf
                     <input name="_method" type="hidden" value="PATCH">
                     <div class="form-group">
                         <label for="exampleInputTitle">Nom</label>
                         <input type="text" class="form-control" id="exampleInputTitle" aria-describedby="nameHelp" name="name" value="{{$category->name}}">
                     </div>
-                    <div class="center-align">
+                    <div class="form-group form-group-file">
+                        <label for="logoUrlInput" class="form-trigger-file">Image actuelle</label><br/>
+                        <img src="{{ asset('storage/'.$category->url_img) }}" alt="image {{ $category->name }}" width="50" class="mb-2">
+                        <input type="file" class="form-control-file" id="imageInput" aria-describedby="imageHelp" name="image" value="{{$category->url_img}}" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="identificationInputTitle">Code d’identification</label>
+                        <input type="text" class="form-control" id="identificationInputTitle" aria-describedby="identificationHelp" name="identification" value="{{$category->identification}}">
+                    </div>
+                    <div class="mt-4 mb-4 d-flex justify-content-between">
                         <a href="{{action('CategoryController@index')}}" class="btn btn-outline-primary">
                             Retour
                         </a>

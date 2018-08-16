@@ -59,12 +59,14 @@
     </ul>
 
     <div class="center-align align-self-end mt-auto">
-        <button type="button" class="btn btn-outline-secondary" href="{{ route('logout') }}"
-                onclick="event.preventDefault();
-        document.getElementById('logout-form').submit();">
+        <button type="button" class="btn btn-outline-secondary" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
             <i class="fas fa-sign-out-alt"></i>
             Déconnection
         </button>
+
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+            @csrf
+        </form>
     </div>
 
 
