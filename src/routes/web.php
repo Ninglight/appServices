@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('questions/categories', 'AppQuestionController@selectCategories');
+Route::get('questions/init/{category_id}', 'AppQuestionController@initUserPath');
+Route::post('questions/', 'AppQuestionController@updateUserPath');
+Route::get('products/', 'AppProductController@index');
+Route::get('product/{id}', 'AppProductController@show');
+
 Auth::routes();
 
 // Authentication Routes...

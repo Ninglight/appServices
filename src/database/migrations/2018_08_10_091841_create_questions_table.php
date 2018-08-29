@@ -18,7 +18,7 @@ class CreateQuestionsTable extends Migration
             $table->string('value');
             $table->integer('category_id')->reference('id')->on('categories')->onDelete('cascade');
             $table->integer('attribute_id')->reference('id')->on('attributes')->onDelete('cascade');
-            $table->integer('order');
+            $table->integer('order')->nullable();;
             $table->timestamps();
         });
     }

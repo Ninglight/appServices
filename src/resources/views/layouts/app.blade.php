@@ -4,13 +4,7 @@
 
         <div id="app">
 
-            <main class="">
-                {{ $main }}
-            </main>
-
-            <div class="product-list">
-
-            </div>
+            {{ $main }}
 
         </div>
 

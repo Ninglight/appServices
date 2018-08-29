@@ -31,30 +31,34 @@ class ImportController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        $path = $request->file('csv_file')->getRealPath();
+        $path = $request->file('file')->getRealPath();
 
         $stack = [];
 
 
-        if (($handle = fopen ( $path, 'r' )) !== FALSE) {
-            while ( ($data = fgetcsv ( $handle, 1000, ',', '"' )) !== FALSE ) {
+        // On parse les lignes du fichier CSV dans un tableau
+        if (($handle = fopen($path, 'r')) !== FALSE) {
+            while (($data = fgetcsv($handle, 1000, ',', '"')) !== FALSE) {
+
                 array_push($stack, $data);
             }
-        fclose ( $handle );
+            fclose($handle);
         }
 
-
+        // On regarde si le fichier CSV contenait dans enregistrement
         if (count($stack) > 0) {
+            // On regarde si il existe un header dans le fichier
             if ($request->has('header')) {
                 $csv_header_fields = [];
                 foreach ($stack[0] as $key => $value) {
-                    $csv_header_fields[] = $key;
+                    $csv_header_fields[] = $value;
                 }
+                unset($stack[0]);
             }
             $csv_data = $stack;
 
@@ -62,12 +66,23 @@ class ImportController extends Controller
             return redirect()->back();
         }
 
-        return view('import.results', compact( 'csv_header_fields', 'csv_data'));
 
+        $attributes = \App\Attribute::all();
+        $columns = \App\Product::columns();
+
+        $match_attributes = [];
+
+        foreach ($columns as $column) {
+            array_push($match_attributes, $column->COLUMN_NAME);
+        }
+
+        foreach ($attributes as $attribute) {
+            array_push($match_attributes, $attribute->identification);
+        }
+
+        return view('import.results', compact('csv_header_fields', 'csv_data', 'match_attributes'));
 
     }
-
-
 
 
     public function parseImport(CsvImportRequest $request)
@@ -76,7 +91,8 @@ class ImportController extends Controller
         $path = $request->file('csv_file')->getRealPath();
 
         if ($request->has('header')) {
-            $data = Excel::load($path, function($reader) {})->get()->toArray();
+            $data = Excel::load($path, function ($reader) {
+            })->get()->toArray();
         } else {
             $data = array_map('str_getcsv', file($path));
         }
@@ -99,7 +115,7 @@ class ImportController extends Controller
             return redirect()->back();
         }
 
-        return view('import_fields', compact( 'csv_header_fields', 'csv_data', 'csv_data_file'));
+        return view('import_fields', compact('csv_header_fields', 'csv_data', 'csv_data_file'));
 
     }
 
@@ -125,7 +141,7 @@ class ImportController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -136,7 +152,7 @@ class ImportController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -147,8 +163,8 @@ class ImportController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \Illuminate\Http\Request $request
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -159,7 +175,7 @@ class ImportController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

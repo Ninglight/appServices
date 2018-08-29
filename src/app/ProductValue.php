@@ -12,6 +12,28 @@ class ProductValue extends Model
     protected $primaryKey = ['product_id', 'attribute_id', 'default_value_id'];
     public $incrementing = false;
 
+    public static function getProductValueByProduct($product_id) {
+        $product_values = ProductValue::where('product_id', $product_id)->get();
+
+        if($product_values) {
+            return $product_values;
+        } else {
+            return;
+        }
+
+    }
+
+    public static function getProductValueByAttribute($attribute_id) {
+        $product_values = ProductValue::where('attribute_id', $attribute_id)->get();
+
+        if($product_values) {
+            return $product_values;
+        } else {
+            return;
+        }
+
+    }
+
 
     public static function getProductValueByProductByAttribute($product_id, $attribute_id) {
         $product_values = ProductValue::where('product_id', $product_id)->where('attribute_id', $attribute_id)->get();

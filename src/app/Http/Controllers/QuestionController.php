@@ -48,7 +48,9 @@ class QuestionController extends Controller
         $question->value=$request->get('value');
         $question->category_id=$request->get('category_id');
         $question->attribute_id=$request->get('attribute_id');
-        $question->order=$request->get('order');
+        if($request->get('order')) {
+            $question->order=$request->get('order');
+        }
         $question->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
@@ -102,7 +104,9 @@ class QuestionController extends Controller
         $question->value=$request->get('value');
         $question->category_id=$request->get('category_id');
         $question->attribute_id=$request->get('attribute_id');
-        $question->order=$request->get('order');
+        if($request->get('order')) {
+            $question->order=$request->get('order');
+        }
         $question->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session

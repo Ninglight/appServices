@@ -142,8 +142,7 @@
 
                                     <div class="form-group col-md-6">
                                         <label for="exampleFormControlSelect1">{{ $attribute->name }}</label>
-                                        <select class="form-control" id="exampleFormControlSelect1"
-                                                name="{{ $attribute->name }}">
+                                        <select class="form-control" id="exampleFormControlSelect1" name="{{ $attribute->identification }}">
                                             <option value="null">Non renseignée</option>
                                             @foreach($attribute->default_values as $default_value)
                                                 <option value="{{ $default_value->id }}">{{ $default_value->value }}</option>
@@ -155,7 +154,7 @@
 
                                     <div class="form-group col-md-6">
                                         <label for="exampleFormControlSelect2">{{ $attribute->name }}</label>
-                                        <select multiple class="form-control" id="exampleFormControlSelect2" name="{{ $attribute->name }}[]">
+                                        <select multiple class="form-control" id="exampleFormControlSelect2" name="{{ $attribute->identification }}[]">
                                             <option value="null">Non renseignée</option>
                                             @foreach($attribute->default_values as $default_value)
                                                 <option value="{{ $default_value->id }}">{{ $default_value->value }}</option>

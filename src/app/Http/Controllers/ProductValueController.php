@@ -107,7 +107,7 @@ class ProductValueController extends Controller
 
                         $product_value = ProductValue::where('product_id', $product->id)->where('attribute_id', $attribute->id)->firstOrFail();
 
-                        $product_value->default_value_id = $request->get($attribute->name);
+                        $product_value->default_value_id = $request->get($attribute->identification);
 
                         $product_value->save();
 
@@ -118,7 +118,9 @@ class ProductValueController extends Controller
                         $product_value = new \App\ProductValue;
                         $product_value->product_id = $product->id;
                         $product_value->attribute_id = $attribute->id;
-                        $product_value->default_value_id = $request->get($attribute->name);
+                        $product_value->default_value_id = $request->get($attribute->identification);
+
+
 
                         $product_value->save();
                     }
@@ -133,7 +135,7 @@ class ProductValueController extends Controller
 
                 if($request->get($attribute->name)) {
 
-                    $default_values = $request->get($attribute->name);
+                    $default_values = $request->get($attribute->identification);
 
                     // Suppression de toutes les products values d'insérés
 
@@ -189,7 +191,6 @@ class ProductValueController extends Controller
         } else {
             return $product_values;
         }
-
 
     }
 

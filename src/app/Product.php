@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Product extends Model
 {
@@ -28,6 +29,10 @@ class Product extends Model
     // Un produit a plusieurs valeurs d'attribut associés
     public function product_values() {
         return $this->hasMany('App\ProductValue');
+    }
+
+    public static function columns() {
+        return DB::table('information_schema.columns')->where('table_name', 'products')->where('table_schema', 'appservices')->get();
     }
 
     public static function boot() {

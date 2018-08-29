@@ -200,11 +200,22 @@ h1 {
   height: 80px;
   width: 100%;
 
-  img {
-
+  .sidebar-header {
+    position: relative;
   }
 
+  .navbar-brand {
+    position: absolute;
+    top: 50%; left: 50%; /* à 50%/50% du parent référent */
+    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+
+    img {
+      height: 40px;
+    }
+  }
 }
+
+
 
 // Login
 
@@ -249,20 +260,19 @@ h1 {
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: 100%;
+  background-position: right top;
+  background-size: 60%;
 
   z-index: -998;
 }
 
 .main-leaf {
   position: absolute;
-  height: 95vh;
+  height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
   background-position: left bottom;
-  background-size: 40%;
-
+  background-size: 33%;
   z-index: -999;
 }
 
@@ -302,7 +312,7 @@ h1 {
 }
 
 
-// Admin
+// ------------ Admin
 
 // Button
 
@@ -318,4 +328,88 @@ h1 {
 
 // Form
 
+
+// ------------ Front
+
+// Card
+
+.category-card {
+  width: 240px;
+  height: 265px;
+  color: white;
+  text-align: center;
+
+  .card-body {
+    position: relative;
+    padding: 0;
+    width: 100%;
+  }
+
+  .card-title {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+  }
+
+}
+
+// Navigation
+
+.question-navigation {
+
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 0 auto;
+  text-align: center;
+
+  ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  ul li {
+    display: inline-block;
+    margin: 0 1em;
+  }
+
+
+  ul li a {
+    border: 2px solid $primary-color;
+    border-radius: 50%;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-size: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    outline: none;
+    box-sizing: border-box;
+    transition: .2s ease-in-out;
+  }
+
+  ul li a:hover, ul li a.is-active {
+    background-color: $primary-color;
+  }
+}
+
+// Information
+
+.container-information {
+  position: absolute;
+  max-width: 300px;
+  z-index: 2;
+  right: 2rem;
+  top: 2rem;
+
+  .card-body {
+    padding: 1.25rem;
+  }
+
+}
 

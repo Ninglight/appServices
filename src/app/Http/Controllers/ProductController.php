@@ -89,7 +89,8 @@ class ProductController extends Controller
         $product = \App\Product::find($id);
         $brands = \App\Brand::all();
         $categories = \App\Category::all();
-        return view('products.edit', ['product' => $product, 'brands' => $brands, 'categories' => $categories]);
+        $product_values = \App\ProductValue::getProductValueByProduct($product->id);
+        return view('products.edit', ['product' => $product, 'brands' => $brands, 'categories' => $categories, 'product_values' => $product_values]);
     }
 
     /**

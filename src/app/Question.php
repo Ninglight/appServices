@@ -30,6 +30,16 @@ class Question extends Model
         return Question::all()->count();
     }
 
+    public static function findByCategory($category_id) {
+        $questions = Question::where('category_id', $category_id)->get();
+
+        if($questions) {
+            return $questions;
+        } else {
+            return;
+        }
+    }
+
     public static function boot() {
         parent::boot();
 
