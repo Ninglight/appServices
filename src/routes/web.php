@@ -18,7 +18,9 @@ Route::get('/', function () {
 Route::get('questions/categories', 'AppQuestionController@selectCategories');
 Route::get('questions/init/{category_id}', 'AppQuestionController@initUserPath');
 Route::post('questions/', 'AppQuestionController@updateUserPath');
+Route::get('products/init/', 'AppProductController@select');
 Route::get('products/', 'AppProductController@index');
+Route::post('products/filters', 'AppProductController@updateFilters');
 Route::get('product/{id}', 'AppProductController@show');
 
 Auth::routes();

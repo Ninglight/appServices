@@ -34,7 +34,6 @@ class ProductValue extends Model
 
     }
 
-
     public static function getProductValueByProductByAttribute($product_id, $attribute_id) {
         $product_values = ProductValue::where('product_id', $product_id)->where('attribute_id', $attribute_id)->get();
 
@@ -51,17 +50,17 @@ class ProductValue extends Model
 
     // Une valeur est affecté à un produit
     public function product() {
-        return $this->belongsTo('App\Product');
+        return $this->belongsTo('App\Product', 'product_id');
     }
 
     // Une valeur est affecté à un produit
     public function attribute() {
-        return $this->belongsTo('App\Attribute');
+        return $this->belongsTo('App\Attribute', 'attribute_id');
     }
 
     // Une valeur est affecté à une valeur par défaut
     public function default_value() {
-        return $this->belongsTo('App\DefaultValue');
+        return $this->belongsTo('App\DefaultValue', 'default_value_id');
     }
 
     /**

@@ -26,6 +26,11 @@ class DefaultValue extends Model
         return $this->hasOne('App\Answer');
     }
 
+    // Une valeur par défaut a plusieurs valeurs d'attribut associés
+    public function attribute() {
+        return $this->belongsTo('App\Attribute');
+    }
+
     public static function boot() {
         parent::boot();
 

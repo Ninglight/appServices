@@ -42,4 +42,26 @@ class Product extends Model
             $product->product_value()->delete();
         });
     }
+
+    public static function getActivatedProductByCategory($category_id) {
+        $products = \App\Product::where('category_id', $category_id)->where('status', 1)->get();
+
+        if($products) {
+            return $products;
+        } else {
+            return;
+        }
+
+    }
+
+    public static function getProductByCategory($category_id) {
+        $products = Product::where('category_id', $category_id)->get();
+
+        if($products) {
+            return $products;
+        } else {
+            return;
+        }
+
+    }
 }

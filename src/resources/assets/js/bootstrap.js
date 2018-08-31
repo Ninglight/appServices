@@ -27,7 +27,6 @@ try {
       $('#main').removeClass('active');
     });
 
-    $('.collapse').collapse()
 
     // Javascript to enable link to tab
     var url = document.location.toString();
@@ -42,12 +41,17 @@ try {
 
     $('#send').tooltip('show');
 
-    $('#fileInput').on('change',function(){
+    $('#fileInput').on('change', function () {
       //get the file name
       var fileName = $(this).val();
       //replace the "Choose a file" label
       $(this).next('.custom-file-label').html(fileName);
     })
+
+    $('#Reset').click(function(){
+      $("#option1").click();
+    });
+
 
   })
 

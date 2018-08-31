@@ -23,9 +23,14 @@
 }
 
 h1 {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 900;
+   color: $primary-color;
+ }
+
+h2 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  color: $primary-color;
+  font-weight: 800;
 }
 
 .gradient-background {
@@ -196,23 +201,34 @@ h1 {
 // -- Navbar
 
 #app .navbar {
-  position:absolute;
-  height: 80px;
   width: 100%;
 
-  .sidebar-header {
-    position: relative;
+  .navbar-toggler {
+    border: none;
+    color: inherit;
+    font-size: inherit;
+  }
+
+  a {
+    color: rgba(0, 169, 131, 0.7);
+
+    &.active{
+      color: $primary-color!important;
+    }
+  }
+
+  .nav-link {
+    font-weight: 600;
   }
 
   .navbar-brand {
-    position: absolute;
-    top: 50%; left: 50%; /* à 50%/50% du parent référent */
-    transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
 
-    img {
-      height: 40px;
+    a {
+      color: $primary-color!important;
     }
+
   }
+
 }
 
 
@@ -250,8 +266,8 @@ h1 {
 .main-screen {
   height: 100vh;
 
-  main-content {
-
+  .main-content {
+    align-self: center;
   }
 }
 
@@ -262,9 +278,33 @@ h1 {
   background-repeat: no-repeat;
   background-position: right top;
   background-size: 60%;
-
   z-index: -998;
 }
+
+@media (max-width: 575.98px) {
+
+  .main-background {
+    background-size: 100%;
+  }
+
+  .welcome-content {
+    margin-bottom: 2rem;
+    margin-bottom: 0 !important;
+  }
+
+  .navbar-brand {
+    font-size: 0.625rem;
+  }
+
+  .container-information {
+    .card {
+      width: 300px !important;
+    }
+  }
+
+
+}
+
 
 .main-leaf {
   position: absolute;
@@ -274,6 +314,7 @@ h1 {
   background-position: left bottom;
   background-size: 33%;
   z-index: -999;
+  opacity: .3;
 }
 
 
@@ -401,15 +442,168 @@ h1 {
 // Information
 
 .container-information {
-  position: absolute;
-  max-width: 300px;
-  z-index: 2;
-  right: 2rem;
-  top: 2rem;
 
-  .card-body {
-    padding: 1.25rem;
+  color: rgba(0, 0, 0, 0.65);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  z-index: 1010;
+  width: 100%;
+  top: 110px;
+  left: 0;
+  pointer-events: none;
+
+
+
+
+  .card {
+    padding: 10px 16px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: #fff;
+    display: inline-block;
+    pointer-events: all;
+    max-width: 400px;
+    width: 100%;
+
+    p {
+      margin: 0;
+    }
+
   }
 
 }
 
+.modal-content {
+  width: 90%;
+}
+
+
+// Products page
+
+.products-container {
+
+}
+
+.filter-card {
+  border-color: $primary-color;
+}
+
+.product-card {
+
+  &:hover {
+    text-decoration: none;
+    color: $primary-color;
+  }
+
+  .card {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    transition: all .5s;
+    height: 100%;
+
+    &:hover {
+      box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+    }
+
+    .card-body {
+      padding: 1.15rem;
+    }
+
+    h3 {
+      font-size: 1.275rem;
+    }
+
+  }
+
+}
+
+
+// Product Page
+
+.product-img {
+  img {
+    width: 100%;
+  }
+}
+
+.product-main {
+
+  .product-price {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: var(--info);
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+}
+
+.product-data {
+
+  padding-left: 15px!important;
+
+  p {
+    margin: 0;
+  }
+
+}
+
+
+// Callout
+
+.bd-callout {
+  padding: .75rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  background-color: $primary-color;
+  color: #fff;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bd-callout h5 {
+  margin-top: 0;
+  margin-bottom: .25rem;
+  font-weight: 600;
+}
+
+.bd-callout p:last-child {
+  margin-bottom: 0
+}
+
+.bd-callout code {
+  border-radius: .25rem
+}
+
+.bd-callout+.bd-callout {
+  margin-top: -.25rem
+}
+
+.bd-callout-info {
+  border-left-color: $primary-color
+}
+
+.bd-callout-info h4 {
+  color: #5bc0de
+}
+
+.bd-callout-warning {
+  border-left-color: #f0ad4e
+}
+
+.bd-callout-warning h4 {
+  color: #f0ad4e
+}
+
+.bd-callout-danger {
+  border-left-color: #d9534f
+}
+
+.bd-callout-danger h4 {
+  color: #d9534f
+}

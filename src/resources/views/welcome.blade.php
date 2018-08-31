@@ -2,7 +2,7 @@
 
     @slot('main')
 
-        <div class="main-screen d-flex">
+        <div class="main-screen d-flex flex-column align-items-start">
 
             @include('components.navbar')
 
@@ -10,16 +10,19 @@
 
             <div class="main-background" style="background-image: url({{ asset('images/illustration.svg') }}"></div>
 
-            <div class="container main-content align-self-center">
+            <div class="container main-content welcome-content mb-auto">
                 <h1 class="mb-3 left-align">
                     Définissons vos besoins, <br>
                     nous trouvons votre solution
                 </h1>
-                <a href="{{action('AppQuestionController@selectCategories')}}">
-                    <button class="btn btn-info">
-                        Répondre aux questions
-                    </button>
+                <a class="btn btn-info my-1" href="{{action('AppQuestionController@selectCategories')}}">
+                    Répondre aux questions
                 </a>
+                <a class="btn btn-outline-info my-1" href="{{action('AppProductController@select')}}">
+                    Rechercher directement
+                </a>
+
+
 
             </div>
         </div>

@@ -11,6 +11,11 @@
 
             </div>
 
+            <div class="bd-callout">
+                <h5>Informations complémentaire pour l'import</h5>
+                <p>De type </p>
+            </div>
+
             @include('components.alerts')
 
             <div class="row">

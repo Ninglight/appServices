@@ -2,31 +2,38 @@
 
     @slot('main')
 
-        <div class="main-screen d-flex">
+        <div class="main-screen d-flex flex-column">
 
             @include('components.navbar')
 
             @include('components.alerts')
 
+            <div class="main-background" style="background-image: url({{ asset('images/blank-illustration.svg') }}"></div>
+
             <div class="main-leaf" style="background-image: url({{ asset('images/main-leaf.svg') }}"></div>
 
             @if($current_question->information)
 
+                <div class="container-information d-flex justify-content-center" data-toggle="modal" data-target="#exampleModal">
+                    <div class="card d-flex flex-row align-items-center justify-content-center">
+                        <i class="fas fa-info-circle text-primary mr-2"></i>
+                        <p>{{ $current_question->information->title }}. <span class="text-primary">En savoir plus</span></p>
+
+                    </div>
+                </div>
 
 
-                <div class="container-information">
-                    <div class="card">
-                        <h5 class="card-header">
-                            <i class="fas fa-info-circle mr-2"></i>
-                            {{ $current_question->information->title }}
-                        </h5>
-
-                        <div class="card-body">
-                            <p class="card-text">{{ substr($current_question->information->content, 0, 100) . '...' }}</p>
-                            <div class="right-align">
-                                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal">
-                                    En savoir plus
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog d-flex justify-content-center" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">{{ $current_question->information->title }}</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
                                 </button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="card-text">{{ $current_question->information->content }}</p>
                             </div>
                         </div>
                     </div>
@@ -34,10 +41,9 @@
 
 
 
-
             @endif
 
-            <div class="container main-content align-self-center">
+            <div class="container main-content align-self-center mb-auto">
 
                 <h1 class="lg-3 center-align mb-3">
                     {{ $current_question->value }}
@@ -75,8 +81,6 @@
                     </form>
 
                 </div>
-
-
 
 
                 <div class="">

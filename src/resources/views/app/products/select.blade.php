@@ -21,7 +21,7 @@
 
                     @foreach($categories as $category)
 
-                        <a href="{{ action('AppQuestionController@initUserPath', $category->id )}}">
+                        <a href="{{ action('AppProductController@index', ['category' => $category->id] )}}">
                             <div class="col-lg-3 col-md-4 col-sm-6">
                                 <div class="card category-card" style="background-image: url({{ asset('storage/'.$category->url_img) }})">
                                     <div class="card-body">

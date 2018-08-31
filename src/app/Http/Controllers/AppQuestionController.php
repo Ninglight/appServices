@@ -96,6 +96,8 @@ class AppQuestionController extends Controller
 
         }
 
+        //dd($questions);
+
         // Si on est ici c'est que c'est terminé donc on va pouvoir créer une liste d'attribut pour les filtres
         $filters = [];
 
@@ -103,24 +105,19 @@ class AppQuestionController extends Controller
 
             // On get sur la question pour récupérer la default_value
 
-            if($question->user_answer != "null"){
+            if($question->user_answer != "null") {
 
                 $answer = \App\Answer::find($question->user_answer);
 
-                $filter = [
-                    'attribute' => $question->attribute,
-                    'default_value' => $answer->default_value
-                ];
-
-                array_push($filters, $filter);
+                array_push($filters, $answer->default_value->id);
 
             }
 
         }
 
-        $products = \App\Product::all();
+        $category = \App\Category::find($questions[0]->category);
 
-        return view('app.products.index', ['products' => $products, 'filters' => $filters]);
+        return redirect()->action('AppProductController@index', ['category' => $category[0], 'filters' => $filters]);
 
     }
 

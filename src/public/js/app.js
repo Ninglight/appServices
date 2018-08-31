@@ -13726,8 +13726,6 @@ try {
       $('#main').removeClass('active');
     });
 
-    $('.collapse').collapse();
-
     // Javascript to enable link to tab
     var url = document.location.toString();
     if (url.match('#')) {
@@ -13746,6 +13744,10 @@ try {
       var fileName = $(this).val();
       //replace the "Choose a file" label
       $(this).next('.custom-file-label').html(fileName);
+    });
+
+    $('#Reset').click(function () {
+      $("#option1").click();
     });
   });
 } catch (e) {}
