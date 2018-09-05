@@ -132,7 +132,7 @@
 
                 <div class="container question-navigation d-flex flex-row justify-content-center align-items-start">
 
-                    <form method="post" action="{{action('AppQuestionController@returnUserPath')}}"
+                    <form method="post" action="{{action('AppQuestionController@updateUserPath')}}"
                           enctype="multipart/form-data">
                         @csrf
                         <input name="current_question" type="hidden" value="{{ $current_question->id }}">

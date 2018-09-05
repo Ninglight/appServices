@@ -17,6 +17,7 @@ class CreateDefaultValuesTable extends Migration
             $table->increments('id');
             $table->integer('attribute_id')->reference('id')->on('attributes')->onDelete('cascade');
             $table->string('value');
+            $table->string('identification');
             $table->timestamps();
         });
     }
