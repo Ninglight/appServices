@@ -18,18 +18,6 @@ class UserController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        $user = \App\User::find($id);
-        return view('questions.show', ['question' => $user]);
-    }
-
-    /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -48,7 +36,7 @@ class UserController extends Controller
     public function edit($id)
     {
         $user = \App\User::find($id);
-        return view('questions.edit', ['user' => $user]);
+        return view('users.edit', ['user' => $user]);
     }
 
     /**
@@ -61,20 +49,17 @@ class UserController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'value' => 'required|max:255',
-            'category_id' => 'required|max:255',
-            'attribute_id' => 'required|max:255'
+            'name' => 'required|max:255',
+            'email' => 'required|max:255'
         ]);
 
         $user= \App\User::find($id);
-        $user->value=$request->get('value');
-        $user->category_id=$request->get('category_id');
-        $user->attribute_id=$request->get('attribute_id');
-        $user->order=$request->get('order');
+        $user->name=$request->get('name');
+        $user->email=$request->get('email');
         $user->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('admin/questions')->with(['success' => "La question a bien été mise à jour"]);
+        return redirect('admin/users')->with(['success' => "User has been updated"]);
     }
 
     /**
@@ -87,6 +72,6 @@ class UserController extends Controller
     {
         $user = \App\User::find($id);
         $user->delete();
-        return redirect('admin/users')->with('success','La question a bien été supprimée');
+        return redirect('admin/users')->with('success','User has been deleted');
     }
 }

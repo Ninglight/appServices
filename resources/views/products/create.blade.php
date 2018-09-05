@@ -7,7 +7,7 @@
                 <button type="button" id="sidebarCollapse" class="btn btn-link btn-title pl-0 hidden-md-up">
                     <i class="fas fa-bars"></i>
                 </button>
-                <h1>Créer un produit</h1>
+                <h1>Create a product</h1>
             </div>
 
             @include('components.alerts')
@@ -20,21 +20,21 @@
                 <div class="row">
 
                     <div class="form-group col-sm-12">
-                        <label for="exampleFormControlSelect1">Statut</label><br>
+                        <label for="exampleFormControlSelect1">Status</label><br>
                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
                             <label class="btn btn-primary">
                                 <input type="radio" name="status" id="option1" autocomplete="off" value="1" required>
-                                Activé
+                                Enabled
                             </label>
                             <label class="btn btn-primary">
                                 <input type="radio" name="status" id="option2" autocomplete="off" value="0" required>
-                                Désactivé
+                                Disabled
                             </label>
                         </div>
                     </div>
 
                     <div class="form-group col-md-6">
-                        <label for="exampleInputTitle">Nom</label>
+                        <label for="exampleInputTitle">Name</label>
                         <input type="text" class="form-control" id="exampleInputTitle" aria-describedby="nameHelp"
                                name="name" required value="{{ old('name') }}">
                     </div>
@@ -43,7 +43,7 @@
                 <div class="row">
 
                     <div class="form-group col-md-6">
-                        <label for="exampleFormControlSelect1">Catégorie</label>
+                        <label for="exampleFormControlSelect1">Category</label>
                         <select class="form-control" id="exampleFormControlSelect1" name="category_id">
                             @foreach( $categories as $category)
                                 <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -51,7 +51,7 @@
                         </select>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="exampleFormControlSelect1">Marque</label>
+                        <label for="exampleFormControlSelect1">Brand</label>
                         <select class="form-control" id="exampleFormControlSelect1" name="brand_id">
                             @foreach( $brands as $brand)
                                 <option value="{{ $brand->id }}">{{ $brand->name }}</option>
@@ -66,31 +66,31 @@
                                   name="description" required value="{{ old('description') }}"></textarea>
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="exampleInputTitle">Réf. Constructeur</label>
+                        <label for="exampleInputTitle">Constructor reference</label>
                         <input type="text" class="form-control" id="exampleInputTitle"
                                aria-describedby="constructorHelp" name="constructor_reference" required
                                value="{{ old('constructor_reference') }}">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="exampleInputTitle">Réf. Connexing</label>
+                        <label for="exampleInputTitle">Connexing reference</label>
                         <input type="text" class="form-control" id="exampleInputTitle" aria-describedby="connexingHelp"
                                name="connexing_reference" required value="{{ old('connexing_reference') }}">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="exampleInputTitle">Lien vers l'image externe</label>
+                        <label for="exampleInputTitle">Link to external picture</label>
                         <input type="text" class="form-control" id="external_url_imgTitle"
                                aria-describedby="external_url_imgHelp" name="external_url_img" required
                                value="{{ old('external_url_img') }}">
                     </div>
 
                     <div class="form-group col-md-6">
-                        <label for="exampleInputTitle">Lien vers le site ecommerce</label>
+                        <label for="exampleInputTitle">Link to ecommerce page</label>
                         <input type="text" class="form-control" id="exampleInputTitle" aria-describedby="connexingHelp"
                                name="url_ecommerce" required value="{{ old('url_ecommerce') }}">
                     </div>
 
                     <div class="form-group col-md-6">
-                        <label for="exampleInputTitle">Prix</label>
+                        <label for="exampleInputTitle">Price</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text">€</span>
@@ -106,9 +106,9 @@
 
                     <div class="col-sm-12 mt-4 mb-4 d-flex justify-content-between">
                         <a href="{{action('ProductController@index')}}" class="btn btn-outline-primary">
-                            Retour
+                            Back
                         </a>
-                        <button type="submit" class="btn btn-primary ">Créer le produit</button>
+                        <button type="submit" class="btn btn-primary ">Create a product</button>
                     </div>
                 </div>
             </form>

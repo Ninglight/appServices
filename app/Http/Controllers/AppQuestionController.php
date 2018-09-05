@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class AppQuestionController extends Controller
 {
@@ -11,7 +12,7 @@ class AppQuestionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function selectCategories()
+    public function selectCategories(Request $request)
     {
         $categories = \App\Category::all();
         return view('app.questions.index', ['categories' => $categories]);
@@ -25,12 +26,15 @@ class AppQuestionController extends Controller
      */
     public function initUserPath(Request $request, $category_id)
     {
-        $questions = \App\Question::findByCategory($category_id);
+        $questions = \App\Question::findByCategory($category_id)->sortBy('order')->sortBy('id');
 
         foreach ($questions as $key=>$question) {
-            $question->user_answer = 0;
+            $question->user_answers = [];
             $question->validate = false;
         }
+
+        // On regénère les données en session
+        $request->session()->flush();
 
         // Add to session variable
         $request->session()->put('questions', $questions);
@@ -57,8 +61,27 @@ class AppQuestionController extends Controller
 
             if($question-> id == $current_question) {
 
-                $question->user_answer = $request->get('answer');
-                $question->validate = true;
+                $answers = [];
+
+                if($question->attribute->assignment_multiple == 0) {
+
+                    array_push($answers, $request->get('answer'));
+                    $question->validate = true;
+
+                } else {
+
+                    foreach ($request->get('answers') as $answer) {
+
+                        array_push($answers, $answer);
+                        $question->validate = true;
+
+                    }
+
+                }
+
+                if($answers) {
+                    $question->user_answers = $answers;
+                }
 
             }
 
@@ -101,15 +124,23 @@ class AppQuestionController extends Controller
         // Si on est ici c'est que c'est terminé donc on va pouvoir créer une liste d'attribut pour les filtres
         $filters = [];
 
-        foreach ($questions as $question) {
+        foreach($questions as $question) {
 
             // On get sur la question pour récupérer la default_value
 
-            if($question->user_answer != "null") {
+            if($question->user_answers) {
 
-                $answer = \App\Answer::find($question->user_answer);
+                foreach($question->user_answers as $user_answer) {
 
-                array_push($filters, $answer->default_value->id);
+                    if($user_answer != "null") {
+
+                        $answer = \App\Answer::find($user_answer);
+
+                        array_push($filters, $answer->default_value->id);
+
+                    }
+
+                }
 
             }
 
@@ -120,6 +151,48 @@ class AppQuestionController extends Controller
         return redirect()->action('AppProductController@index', ['category' => $category[0], 'filters' => $filters]);
 
     }
+
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function returnUserPath(Request $request)
+    {
+
+        $current_question = $request->get('current_question');
+
+        //Récupération de la variable de session
+        $questions = $request->session()->get('questions');
+
+        // On passe à la question précédente
+        if ($questions->firstWhere('id', --$current_question)) {
+
+            //On retourne ce current_question
+            foreach ($questions as $question) {
+
+                if($question->id == $current_question) {
+
+                    // Il y a une prochaine question donc on prépare les données
+                    $current_question = $question;
+
+                    return view('app.questions.reply', ['questions' => $questions, 'current_question' => $current_question]);
+
+                }
+            }
+
+        } else {
+
+            return redirect('questions/categories');
+
+        }
+
+
+
+    }
+
 
 
 }

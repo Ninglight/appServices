@@ -7,26 +7,6 @@ use Illuminate\Http\Request;
 class InformationController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -45,33 +25,14 @@ class InformationController extends Controller
         $information->title=$request->get('title');
         $information->content=$request->get('content');
         $information->question_id=$request->get('question_id');
+        if($request->get('url_content')) {
+            $information->url_content=$request->get('url_content');
+        }
 
         $information->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('/admin/questions/'.$information->question_id.'/edit#information')->with(['success' => "L'information a bien été ajoutée"]);
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
+        return redirect('/admin/questions/'.$information->question_id.'/edit#information')->with(['success' => "Information has been created."]);
     }
 
     /**
@@ -93,11 +54,14 @@ class InformationController extends Controller
         $information->title=$request->get('title');
         $information->content=$request->get('content');
         $information->question_id=$request->get('question_id');
+        if($request->get('url_content')) {
+            $information->url_content=$request->get('url_content');
+        }
 
         $information->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('/admin/questions/'.$information->question_id.'/edit#answer')->with(['success' => "L'information a bien été mise à jour"]);
+        return redirect('/admin/questions/'.$information->question_id.'/edit#information')->with(['success' => "Information has been updated."]);
     }
 
     /**
@@ -111,6 +75,6 @@ class InformationController extends Controller
         $information = \App\Information::find($id);
         $question_id = $information->question_id;
         $information->delete();
-        return redirect('/admin/questions/'.$question_id.'/edit#answer')->with("success","L'information bien été supprimée");
+        return redirect('/admin/questions/'.$question_id.'/edit#information')->with("success","Information has been deleted.");
     }
 }

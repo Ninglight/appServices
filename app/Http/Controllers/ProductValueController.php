@@ -8,29 +8,6 @@ use Illuminate\Http\Request;
 class ProductValueController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
-    {
-        $product_values = \App\ProductValue::all();
-        return view('product_values.index', ['product_values' => $product_values]);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        $products = \App\Product::all();
-        $default_values = \App\DefaultValue::all();
-        return view('default_values.create', ['products' => $products, 'default_values' => $default_values]);
-    }
-
-    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request $request
@@ -52,7 +29,7 @@ class ProductValueController extends Controller
         $product_value->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('product_values')->with(['success' => "La valeur du produit a bien été ajouté"]);
+        return redirect('product_values')->with(['success' => "Product value has been created."]);
     }
 
     /**
@@ -162,7 +139,7 @@ class ProductValueController extends Controller
         }
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('/admin/products/' . $product->id . '/edit#profile')->with(['success' => "La valeur du produit a bien été mis à jour"]);
+        return redirect('/admin/products/' . $product->id . '/edit#profile')->with(['success' => "Product value has been updated."]);
     }
 
     /**

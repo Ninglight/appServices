@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Seeder;
 
+use Carbon\Carbon;
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -11,31 +13,34 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+
         DB::table('users')->insert([
             'name' => 'toto',
             'email' => 'toto@connexing.com',
-            'password' => bcrypt('toto')
+            'password' => bcrypt('toto'),
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
 
-        DB::table('categories')->insert([
-            'name' => 'Casques téléphoniques',
-            'url_img' => 'QCNIfezfiqdsbnze.png',
-            'identification' => 'casques'
-        ]);
-
-        DB::table('brands')->insert([
+        /*DB::table('brands')->insert([
             'name' => 'Jabra',
-            'url_logo' => 'jabra.svg'
+            'url_logo' => 'jabra.svg',
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
 
         DB::table('brands')->insert([
             'name' => 'Plantronics',
-            'url_logo' => 'plantronics.svg'
+            'url_logo' => 'plantronics.svg',
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
 
         DB::table('brands')->insert([
             'name' => 'Sennheiser',
-            'url_logo' => 'sennheiser.svg'
+            'url_logo' => 'sennheiser.svg',
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
 
         DB::table('products')->insert([
@@ -48,98 +53,12 @@ class DatabaseSeeder extends Seeder
             'price' => '10.56',
             'url_ecommerce' => 'https://connexing.fr/jabra',
             'category_id' => \App\Category::where('name', 'Casques téléphoniques')->firstOrFail()->id,
-            'brand_id' => \App\Brand::where('name', 'Jabra')->firstOrFail()->id
+            'brand_id' => \App\Brand::where('name', 'Jabra')->firstOrFail()->id,
+            'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);
+        */
 
-
-        // Attribut 'Filaire', de 'Casques téléphoniques'
-
-        DB::table('attributes')->insert([
-            'name' => 'Filaire',
-            'category_id' => \App\Category::where('name', 'Casques téléphoniques')->firstOrFail()->id,
-            'identification' => 'filaire',
-            'assignement_multiple' => 0
-        ]);
-
-        DB::table('default_values')->insert([
-            'attribute_id' => \App\Attribute::where('name', 'Filaire')->firstOrFail()->id,
-            'value' => 'Filaire',
-            'identification' => '250'
-        ]);
-
-        DB::table('default_values')->insert([
-            'attribute_id' => \App\Attribute::where('name', 'Filaire')->firstOrFail()->id,
-            'value' => 'Sans-fil',
-            'identification' => '246'
-        ]);
-
-
-        // Attribut 'Autonomie en conversation', de 'Casques téléphoniques'
-
-        DB::table('attributes')->insert([
-            'name' => 'Autonomie en conversation',
-            'category_id' => \App\Category::where('name', 'Casques téléphoniques')->firstOrFail()->id,
-            'identification' => 'autonomie_conversation',
-            'assignement_multiple' => 0
-        ]);
-
-        DB::table('default_values')->insert([
-            'attribute_id' => \App\Attribute::where('name', 'Filaire')->firstOrFail()->id,
-            'value' => '10 heures',
-            'identification' => '9h-11h'
-        ]);
-
-        DB::table('default_values')->insert([
-            'attribute_id' => \App\Attribute::where('name', 'Filaire')->firstOrFail()->id,
-            'value' => '7 heures',
-            'identification' => '6h-8h'
-        ]);
-
-        DB::table('default_values')->insert([
-            'attribute_id' => \App\Attribute::where('name', 'Filaire')->firstOrFail()->id,
-            'value' => 'Plus de 11 heures',
-            'identification' => '+11h'
-        ]);
-
-
-        // Attribut 'Autonomie en veille', de 'Casques téléphoniques'
-
-        DB::table('attributes')->insert([
-            'name' => 'Autonomie en veille',
-            'category_id' => \App\Category::where('name', 'Casques téléphoniques')->firstOrFail()->id,
-            'identification' => 'autonomie_veille',
-            'assignement_multiple' => 0
-        ]);
-
-        DB::table('default_values')->insert([
-            'attribute_id' => \App\Attribute::where('name', 'Filaire')->firstOrFail()->id,
-            'value' => '60 heures',
-            'identification' => '60h'
-        ]);
-
-        DB::table('default_values')->insert([
-            'attribute_id' => \App\Attribute::where('name', 'Filaire')->firstOrFail()->id,
-            'value' => '50 heures',
-            'identification' => '50h'
-        ]);
-
-        DB::table('default_values')->insert([
-            'attribute_id' => \App\Attribute::where('name', 'Filaire')->firstOrFail()->id,
-            'value' => '40 heures',
-            'identification' => '40h'
-        ]);
-
-        DB::table('default_values')->insert([
-            'attribute_id' => \App\Attribute::where('name', 'Filaire')->firstOrFail()->id,
-            'value' => '100 heures',
-            'identification' => '100h'
-        ]);
-
-        DB::table('default_values')->insert([
-            'attribute_id' => \App\Attribute::where('name', 'Filaire')->firstOrFail()->id,
-            'value' => 'Plus de 150 heures',
-            'identification' => '+ 150h'
-        ]);
 
 
     }

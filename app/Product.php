@@ -41,7 +41,7 @@ class Product extends Model
         parent::boot();
 
         self::deleting(function($product) {
-            $product->product_value()->delete();
+            $product->product_values()->delete();
         });
     }
 

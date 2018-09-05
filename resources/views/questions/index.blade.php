@@ -7,11 +7,11 @@
                 <button type="button" id="sidebarCollapse" class="btn btn-link btn-title pl-0 hidden-md-up">
                     <i class="fas fa-bars"></i>
                 </button>
-                <h1>Liste de questions</h1>
+                <h1>Questions list</h1>
 
                 <a href="{{action('QuestionController@create')}}" class="btn btn-primary ml-auto p-2">
                     <i class="fas fa-plus-circle mr-1"></i>
-                    Créer une question
+                    Create a question
                 </a>
             </div>
 
@@ -23,16 +23,16 @@
                     <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Libelle</th>
-                        <th scope="col">Catégorie</th>
-                        <th scope="col">Attribut</th>
-                        <th scope="col">Ordre</th>
+                        <th scope="col">Value</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Attribute</th>
+                        <th scope="col">Order</th>
                         <th scope="col"></th>
                     </tr>
                     </thead>
                     <tbody>
 
-                    @foreach($questions as $question)
+                    @foreach($questions->sortBy('order')->sortBy('category_id') as $question)
 
                         <tr class="table-row" data-href="{{action('QuestionController@edit', $question->id)}}">
                             <th scope="row">{{ $question->id }}</th>
@@ -61,7 +61,7 @@
 
             @else
 
-                <p class="text-center">Aucun produit n'est affichable actuellement</p>
+                <p class="text-center">Any question registred.</p>
 
             @endif
 

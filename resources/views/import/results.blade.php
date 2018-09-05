@@ -8,7 +8,7 @@
                 <button type="button" id="sidebarCollapse" class="btn btn-link btn-title pl-0 hidden-md-up">
                     <i class="fas fa-bars"></i>
                 </button>
-                <h1>Importer votre fichier</h1>
+                <h1>Import preparation</h1>
 
             </div>
 
@@ -45,8 +45,8 @@
 
                 </table>
 
-                <button type="submit" class="btn btn-primary">
-                    Importer les données
+                <button type="submit" class="btn btn-primary mb-5">
+                    Import data in database
                 </button>
             </form>
 

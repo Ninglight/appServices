@@ -54,7 +54,7 @@ class QuestionController extends Controller
         $question->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('admin/questions')->with(['success' => "La question a bien été ajoutée"]);
+        return redirect('admin/questions')->with(['success' => "Question has been created."]);
     }
 
     /**
@@ -110,7 +110,7 @@ class QuestionController extends Controller
         $question->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('admin/questions')->with(['success' => "La question a bien été mise à jour"]);
+        return redirect('admin/questions')->with(['success' => "Question has been updated."]);
     }
 
     /**
@@ -123,6 +123,6 @@ class QuestionController extends Controller
     {
         $question = \App\Question::find($id);
         $question->delete();
-        return redirect('admin/questions')->with('success','La question a bien été supprimée');
+        return redirect('admin/questions')->with('success','Question has been deleted.');
     }
 }

@@ -7,7 +7,7 @@
                 <button type="button" id="sidebarCollapse" class="btn btn-link btn-title pl-0 hidden-md-up">
                     <i class="fas fa-bars"></i>
                 </button>
-                <h1>Créer un attribut produit</h1>
+                <h1>Create a attribute</h1>
             </div>
 
             @include('components.alerts')
@@ -17,7 +17,7 @@
                         @csrf
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <label for="exampleFormControlSelect1">Catégorie produit</label>
+                                <label for="exampleFormControlSelect1">Category</label>
                                 <select class="form-control" id="exampleFormControlSelect1" name="category_id">
                                     @foreach( $categories as $category)
                                         @if (old('category_id') == $category->id)
@@ -31,13 +31,13 @@
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <label for="exampleInputTitle">Nom</label>
+                                <label for="exampleInputTitle">Name</label>
                                 <input type="text" class="form-control" id="exampleInputTitle"
                                        aria-describedby="nameHelp" name="name" value="{{ old('name') }}">
                             </div>
 
                             <div class="form-group col-md-6">
-                                <label for="exampleInputTitle">Code Attribut</label>
+                                <label for="exampleInputTitle">Identification</label>
                                 <input type="text" class="form-control" id="exampleInputTitle"
                                        aria-describedby="identificationHelp" name="identification" value="{{ old('identification') }}">
                             </div>
@@ -45,15 +45,15 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="assignment_multiple" id="assignment_multiple">
                                     <label class="form-check-label" for="defaultCheck1">
-                                        Il s'agit d'un attribut aux valeurs multiples.
+                                        Multiple assignment for this attribute ?
                                     </label>
                                 </div>
                             </div>
                                 <div class="mt-4 mb-4 d-flex justify-content-between col-sm-12">
                                     <a href="{{action('AttributeController@index')}}" class="btn btn-outline-primary">
-                                        Retour
+                                        Back
                                     </a>
-                                    <button type="submit" class="btn btn-primary">Créer l'attribut</button>
+                                    <button type="submit" class="btn btn-primary">Create a attribute</button>
                                 </div>
                             </div>
 

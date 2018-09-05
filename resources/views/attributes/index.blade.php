@@ -7,11 +7,11 @@
                 <button type="button" id="sidebarCollapse" class="btn btn-link btn-title pl-0 hidden-md-up">
                     <i class="fas fa-bars"></i>
                 </button>
-                <h1>Attribut de produit</h1>
+                <h1>Attributes list</h1>
 
                 <a href="{{action('AttributeController@create')}}" class="btn btn-primary ml-auto p-2">
                     <i class="fas fa-plus-circle mr-1"></i>
-                    Créer un attribut
+                    Create a attribute
                 </a>
             </div>
 
@@ -23,8 +23,8 @@
                     <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Catégorie</th>
-                        <th scope="col">Nom</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Name</th>
                         <th scope="col"></th>
                     </tr>
                     </thead>
@@ -57,7 +57,7 @@
 
             @else
 
-                <p class="text-center">Aucun attribut n'est affichable actuellement</p>
+                <p class="text-center">Any attribute registred.</p>
 
             @endif
 

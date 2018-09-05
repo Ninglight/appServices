@@ -7,11 +7,11 @@
                 <button type="button" id="sidebarCollapse" class="btn btn-link btn-title pl-0 hidden-md-up">
                     <i class="fas fa-bars"></i>
                 </button>
-                <h1>Liste de catégories</h1>
+                <h1>Categories list</h1>
 
                 <a href="{{action('CategoryController@create')}}" class="btn btn-primary ml-auto p-2">
                     <i class="fas fa-plus-circle mr-1"></i>
-                    Créer une catégorie
+                    Create a category
                 </a>
             </div>
 
@@ -23,7 +23,8 @@
                     <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Nom</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Identification</th>
                         <th scope="col"></th>
                     </tr>
                     </thead>
@@ -34,6 +35,7 @@
                         <tr class="table-row" data-href="{{action('CategoryController@edit', $category->id)}}">
                             <th scope="row" class="">{{ $category->id }}</th>
                             <td class="">{{ $category->name }}</td>
+                            <td class="">{{ $category->identification }}</td>
                             <td class="d-flex justify-content-end right-align">
                                 <a href="{{action('CategoryController@edit', $category->id)}}" class="btn btn-link">
                                     <i class="fas fa-edit"></i>
@@ -56,7 +58,7 @@
 
             @else
 
-                <p class="text-center">Aucune offre actuellement</p>
+                <p class="text-center">Any category registred</p>
 
             @endif
 

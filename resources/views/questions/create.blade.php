@@ -7,7 +7,7 @@
                 <button type="button" id="sidebarCollapse" class="btn btn-link btn-title pl-0 hidden-md-up">
                     <i class="fas fa-bars"></i>
                 </button>
-                <h1>Créer une question</h1>
+                <h1>Create a question</h1>
             </div>
 
             @include('components.alerts')
@@ -16,12 +16,12 @@
                   enctype="multipart/form-data">
                 @csrf
                 <div class="form-group col-md-6">
-                    <label for="exampleInputTitle">Libellé de la question</label>
+                    <label for="exampleInputTitle">Value</label>
                     <input type="text" class="form-control" id="exampleInputTitle" aria-describedby="valueHelp"
                            name="value" required value="{{ old('value') }}">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="exampleFormControlSelect1">Catégorie du produit</label>
+                    <label for="exampleFormControlSelect1">Category</label>
                     <select class="form-control" id="exampleFormControlSelect1" name="category_id">
                         @foreach( $categories as $category)
                             <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -29,7 +29,7 @@
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="exampleFormControlSelect1">Attribut lié</label>
+                    <label for="exampleFormControlSelect1">Reference attribute</label>
                     <select class="form-control" id="exampleFormControlSelect1" name="attribute_id">
                         @foreach( $attributes as $attribute)
                             <option value="{{ $attribute->id }}">{{ $attribute->name }}</option>
@@ -38,7 +38,7 @@
                     </select>
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="exampleFormControlSelect1">Ordre d'apparition</label>
+                    <label for="exampleFormControlSelect1">Appear order</label>
                     <select class="form-control" id="exampleFormControlSelect1" name="order">
                         @for ($i = 1; $i < $numberQuestion+1; $i++)
                             <option value="{{ $i }}">{{ $i }}</option>
@@ -47,9 +47,9 @@
                 </div>
                 <div class="mt-4 mb-4 d-flex justify-content-between col-sm-12">
                     <a href="{{action('ProductController@index')}}" class="btn btn-outline-primary">
-                        Retour
+                        Back
                     </a>
-                    <button type="submit" class="btn btn-primary ">Créer la question</button>
+                    <button type="submit" class="btn btn-primary ">Create a question</button>
                 </div>
             </form>
 

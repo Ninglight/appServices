@@ -18,6 +18,7 @@ class CreateAnswersTable extends Migration
             $table->integer('question_id')->reference('id')->on('questions')->onDelete('cascade');
             $table->integer('default_value_id')->reference('id')->on('default_values')->onDelete('cascade');
             $table->string('value');
+            $table->integer('order')->nullable();
             $table->timestamps();
         });
     }

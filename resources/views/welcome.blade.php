@@ -10,16 +10,17 @@
 
             <div class="main-background" style="background-image: url({{ asset('images/illustration.svg') }}"></div>
 
-            <div class="container main-content welcome-content mb-auto">
+            <div class="container main-content welcome-content my-auto">
                 <h1 class="mb-3 left-align">
-                    Définissons vos besoins, <br>
-                    nous trouvons votre solution
+                    @lang('global.home_baseline')
                 </h1>
+
                 <a class="btn btn-info my-1" href="{{action('AppQuestionController@selectCategories')}}">
-                    Répondre aux questions
+                    @lang('global.nav_questions')
                 </a>
+
                 <a class="btn btn-outline-info my-1" href="{{action('AppProductController@select')}}">
-                    Rechercher directement
+                    @lang('global.nav_products')
                 </a>
 
 

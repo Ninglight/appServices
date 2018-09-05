@@ -7,32 +7,29 @@
                 <button type="button" id="sidebarCollapse" class="btn btn-link btn-title pl-0 hidden-md-up">
                     <i class="fas fa-bars"></i>
                 </button>
-                <h1>Créer une marque</h1>
+                <h1>Create a brand</h1>
             </div>
 
             @include('components.alerts')
 
-            <div class="row">
 
-                <form class="offset-md-3 col-md-6" method="post" action="{{ url('/admin/brands') }}" enctype="multipart/form-data">
+                <form class="row" method="post" action="{{ url('/admin/brands') }}" enctype="multipart/form-data">
                     @csrf
-                    <div class="form-group">
-                        <label for="exampleInputTitle">Nom</label>
+                    <div class="form-group col-md-6">
+                        <label for="exampleInputTitle">Name</label>
                         <input type="text" class="form-control" id="exampleInputTitle" aria-describedby="nameHelp" name="name">
                     </div>
-                    <div class="form-group form-group-file">
-                        <label for="logoUrlInput" class="form-trigger-file">Logo actuelle</label><br/>
+                    <div class="form-group col-md-6 form-group-file">
+                        <label for="logoUrlInput" class="form-trigger-file">logo</label><br/>
                         <input type="file" class="form-control-file" id="logoInput" aria-describedby="logoHelp" name="logo" value="{{old('url_logo')}}" accept="image/*" required>
                     </div>
-                    <div class="mt-4 mb-4 d-flex justify-content-between">
+                    <div class="mt-4 mb-4 d-flex justify-content-between col-sm-12">
                         <a href="{{action('BrandController@index')}}" class="btn btn-outline-primary">
-                            Retour
+                            Back
                         </a>
-                        <button type="submit" class="btn btn-primary ">Créer</button>
+                        <button type="submit" class="btn btn-primary ">Create a brand</button>
                     </div>
                 </form>
-
-            </div>
 
         </div>
 

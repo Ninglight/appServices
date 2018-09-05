@@ -49,7 +49,7 @@ class DefaultValueController extends Controller
         $default_value->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('/admin/attributes/'.$default_value->attribute_id.'/edit#attribute')->with(['success' => "La valeur par défaut a bien été ajouté"]);
+        return redirect('/admin/attributes/'.$default_value->attribute_id.'/edit#attribute')->with(['success' => "Default value has been created."]);
     }
 
     /**
@@ -99,7 +99,7 @@ class DefaultValueController extends Controller
         $default_value->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('/admin/attributes/'.$default_value->attribute_id.'/edit#attribute')->with(['success' => "La valeur par défaut a bien été mis à jour"]);
+        return redirect('/admin/attributes/'.$default_value->attribute_id.'/edit#attribute')->with(['success' => "Default value has been updated."]);
     }
 
     /**
@@ -113,6 +113,6 @@ class DefaultValueController extends Controller
         $default_value = \App\DefaultValue::find($id);
         $attribute_id = $default_value->attribute_id;
         $default_value->delete();
-        return redirect('/admin/attributes/'.$attribute_id.'/edit#attribute')->with("success","La valeur par défaut a bien été supprimé");
+        return redirect('/admin/attributes/'.$attribute_id.'/edit#attribute')->with("success","Default value has been deleted.");
     }
 }

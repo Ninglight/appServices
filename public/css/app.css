@@ -10598,6 +10598,10 @@ h3 {
   opacity: .8;
 }
 
+#sidebar ul li a .fas {
+  margin-right: 0.3rem;
+}
+
 #sidebar ul li a:hover {
   color: #02264B;
   background: #fff;
@@ -10612,7 +10616,6 @@ h3 {
 #sidebar ul ul a {
   font-size: 0.9em !important;
   padding-left: 30px !important;
-  background: #176584;
 }
 
 #admin #main {
@@ -10663,6 +10666,9 @@ h3 {
 
 #app .navbar {
   width: 100%;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 #app .navbar .navbar-toggler {
@@ -10796,6 +10802,19 @@ h3 {
   height: 265px;
   color: white;
   text-align: center;
+  background-size: 100%;
+  border: none;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.category-card:hover {
+  -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 .category-card .card-body {
@@ -10810,6 +10829,14 @@ h3 {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.card .card-img {
+  height: 100%;
+}
+
+.btn-radio {
+  margin-bottom: .2rem !important;
 }
 
 .question-navigation {
@@ -10854,6 +10881,11 @@ h3 {
   background-color: #00A983;
 }
 
+.text-minimize {
+  opacity: .7;
+  font-size: 1rem;
+}
+
 .container-information {
   color: rgba(0, 0, 0, 0.65);
   -webkit-box-sizing: border-box;
@@ -10879,6 +10911,7 @@ h3 {
   pointer-events: all;
   max-width: 400px;
   width: 100%;
+  border: none;
 }
 
 .container-information .card p {
@@ -10887,10 +10920,43 @@ h3 {
 
 .modal-content {
   width: 90%;
+  border: none;
+}
+
+.modal-content .modal-header {
+  padding: 10px 16px;
+  border: none;
+  text-align: center;
+}
+
+.modal-content .modal-body {
+  padding-top: 0;
 }
 
 .filter-card {
-  border-color: #00A983;
+  border-radius: 3px !important;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  border: none;
+}
+
+.filter-card h2 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.filter-card h2 i {
+  font-size: 1.2rem;
+  margin-right: .5rem;
+}
+
+.filter-card .card-header {
+  background: #00A983;
+  border: none;
+  text-align: center;
 }
 
 .product-card:hover {
@@ -10899,8 +10965,8 @@ h3 {
 }
 
 .product-card .card {
-  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-          box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   -webkit-transition: all .5s;
   transition: all .5s;
   height: 100%;
@@ -10923,6 +10989,10 @@ h3 {
   width: 100%;
 }
 
+.product-main .product-brand-img {
+  width: 100px;
+}
+
 .product-main .product-price {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
@@ -10943,8 +11013,7 @@ h3 {
   padding: .75rem;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-  background-color: #00A983;
-  color: #fff;
+  border: 1px solid #00455b;
   border-radius: .5rem;
   -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);

@@ -87,7 +87,8 @@ class ImportController extends Controller
 
     }
 
-    public function getMatchingAttributes() {
+    public function getMatchingAttributes()
+    {
 
         $attributes = \App\Attribute::all();
         $columns = \App\Product::columns();
@@ -141,11 +142,11 @@ class ImportController extends Controller
         // On fait correpondre les données des attributs avec ceux passés dans les colunnes
         $import_attributes = [];
 
-        foreach($param_attributes as $param_attribute){
+        foreach ($param_attributes as $param_attribute) {
 
-            foreach ($match_attributes as $match_attribute){
+            foreach ($match_attributes as $match_attribute) {
 
-                if($match_attribute['name'] === $param_attribute) {
+                if ($match_attribute['name'] === $param_attribute) {
                     array_push($import_attributes, $match_attribute);
                 }
 
@@ -170,23 +171,23 @@ class ImportController extends Controller
 
             $injectable_attributes = [];
 
-            foreach ($row as $cell_key =>  $cell) {
+            foreach ($row as $cell_key => $cell) {
 
                 foreach ($import_attributes as $import_attribute_key => $import_attribute) {
 
                     // On ne s'occupe pas des colonnes en undefined
-                    if($import_attribute['name'] != 'undefined' || $import_attribute['name'] != 'category_id' ) {
+                    if ($import_attribute['name'] != 'undefined' || $import_attribute['name'] != 'category_id') {
 
                         // On match entre la colonne et le cellule de la ligne produit
-                        if($cell_key === $import_attribute_key) {
+                        if ($cell_key === $import_attribute_key) {
 
                             // Si l'attribut est pour le produit
-                            if($import_attribute['source'] == 'Product') {
+                            if ($import_attribute['source'] == 'Product') {
 
                                 $product_param = strval($import_attribute['name']);
 
                                 // Quelques traitements de règle métier
-                                if($product_param == 'status') {
+                                if ($product_param == 'status') {
 
                                     if ($cell == 'Enabled') {
                                         $injectable_product->$product_param = 1;
@@ -202,10 +203,10 @@ class ImportController extends Controller
 
                             }
 
-                            if($import_attribute['source'] == 'Attribute') {
+                            if ($import_attribute['source'] == 'Attribute') {
 
                                 // Si default_value est null on injecte pas dans la tableau
-                                if($cell){
+                                if ($cell) {
 
                                     $injectablea_product_value = new \App\ProductValue;
                                     $injectablea_product_value->attribute_id = $import_attribute['attribute_id'];
@@ -223,7 +224,6 @@ class ImportController extends Controller
                 }
 
 
-
             }
 
             $injectable_data = [
@@ -236,15 +236,13 @@ class ImportController extends Controller
         }
 
 
+        foreach ($injectable_products as $injectable_data) {
 
-        foreach($injectable_products as $injectable_data){
-
-            try{
+            try {
                 $injectable_data['product']->save();
                 $injectable_data['product'] = \App\Product::where('constructor_reference', $injectable_data['product']->constructor_reference)->firstOrFail();
 
-            }
-            catch(\Exception $e){
+            } catch (\Exception $e) {
 
                 $error = [
                     'id' => $e->getCode(),
@@ -259,43 +257,66 @@ class ImportController extends Controller
             }
 
             // Duplication d'une clé unique, donc on test quand même d'ajouter les attributs
-            if(!$error['id'] = 23000){
+            if (!$error['id'] = 23000) {
                 break;
             }
 
             // On réalise les affections par l'identifiant
             // On boucle sur les attributs
-            foreach($injectable_data['attributes'] as $product_value){
+            foreach ($injectable_data['attributes'] as $product_value) {
 
-                //On boucle sur les valeur par défaut de l'attribut
-                foreach ($product_value->attribute->default_values as $default_value){
+                // On gère si nos attributs peuvent avoir plus de valeur
+                if ($product_value->attribute->assignment_multiple == 1) {
+
+                    $product_values = [];
+
+                    //On boucle sur les valeurs par défaut de l'attribut
+                    foreach ($product_value->attribute->default_values as $default_value) {
+
+                        // Si l'identifiant est reconnu dans la valeur prête à être injecter, on y associe la valeur par defaut
+                        if (strpos($product_value->default_value_id, $default_value->identification) == true || $product_value->default_value_id == $default_value->identification) {
+
+                            array_push($product_values, $default_value->id);
+
+                        }
+
+                    }
+
+                    dd($product_values);
 
 
-                    // Si l'identifiant est reconnu dans la valeur prête à être injecter, on y associe la valeur par defaut
-                    if (strpos($product_value->default_value_id, $default_value->identification) == true || $product_value->default_value_id == $default_value->identification) {
+                } else {
 
-                        $product_value->default_value_id = $default_value->id;
+                    //On boucle sur les valeurs par défaut de l'attribut
+                    foreach ($product_value->attribute->default_values as $default_value) {
+
+                        // Si l'identifiant est reconnu dans la valeur prête à être injecter, on y associe la valeur par defaut
+                        if (strpos($product_value->default_value_id, $default_value->identification) == true || $product_value->default_value_id == $default_value->identification) {
+
+                            $product_value->default_value_id = $default_value->id;
+
+                        }
+
+                    }
+
+                    $product_value->product_id = $injectable_data['product']->id;
+
+                    try {
+                        $product_value->save();
+                        array_push($sucess, $product_value);
+                    } catch (\Exception $e) {
+
+                        $error = [
+                            'id' => $e->getCode(),
+                            'message' => $e->getPrevious()->getMessage()
+                        ];
+
+                        array_push($errors, $error);
 
                     }
 
                 }
 
-                $product_value->product_id = $injectable_data['product']->id;
-
-                try{
-                    $product_value->save();
-                    array_push($sucess, $product_value);
-                }
-                catch(\Exception $e){
-
-                    $error = [
-                        'id' => $e->getCode(),
-                        'message' => $e->getPrevious()->getMessage()
-                    ];
-
-                    array_push($errors, $error);
-
-                }
 
             }
 
@@ -304,48 +325,4 @@ class ImportController extends Controller
         return view('import.sucess', ['import_errors' => $errors, 'import_sucess' => $sucess]);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request $request
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
-    }
 }

@@ -8,7 +8,13 @@
                 <button type="button" id="sidebarCollapse" class="btn btn-link btn-title pl-0 hidden-md-up">
                     <i class="fas fa-bars"></i>
                 </button>
-                <h1>Tableau de bord</h1>
+                <h1>Dashboard</h1>
+
+
+
+
+
+
             </div>
 
             @include('components.alerts')

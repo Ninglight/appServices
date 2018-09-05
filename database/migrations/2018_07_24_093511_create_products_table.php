@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('constructor_reference')->unique();
             $table->string('connexing_reference')->unique();
             $table->decimal('price', 8, 2);
-            $table->string('url_ecommerce')->unique();
+            $table->string('url_ecommerce')->unique()->nullable();
             $table->string('external_url_img');
             $table->boolean('status');
             $table->integer('category_id')->reference('id')->on('categories')->onDelete('cascade');

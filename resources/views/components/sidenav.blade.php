@@ -15,26 +15,26 @@
         <li class="nav-item {{ Request::is('admin') ? 'active' : '' }}">
             <a class="nav-link" href="{{ url("/admin") }}">
                 <i class="fas fa-bars"></i>
-                Tableau de bord
+                Dashboard
             </a>
         </li>
         <li>
             <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                 <i class="fas fa-sitemap"></i>
-                Produits
+                Products
             </a>
             <ul class="collapse list-unstyled" id="homeSubmenu">
                 <li class="nav-item {{ Request::is('admin/categories') ? 'active' : '' }}">
                     <a class="nav-link" href="{{ url("/admin/categories") }}">Categories</a>
                 </li>
                 <li class="nav-item {{ Request::is('admin/brands') ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ url("/admin/brands") }}">Marques</a>
+                    <a class="nav-link" href="{{ url("/admin/brands") }}">Brands</a>
                 </li>
-                <li class="nav-item {{ Request::is('admin/products') ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ url("/admin/products") }}">Produits</a>
+                <li class="nav-item {{ Request::is('admin/products') || Request::is('admin/product') ? 'active' : '' }}">
+                    <a class="nav-link" href="{{ url("/admin/products") }}">Products</a>
                 </li>
                 <li class="nav-item {{ Request::is('admin/attributes') ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ url("/admin/attributes") }}">Attributs</a>
+                    <a class="nav-link" href="{{ url("/admin/attributes") }}">Attributes</a>
                 </li>
             </ul>
         </li>
@@ -47,13 +47,13 @@
         <li class="nav-item {{ Request::is('admin/users') ? 'active' : '' }}">
             <a class="nav-link" href="{{ url("/admin/users") }}">
                 <i class="fas fa-users"></i>
-                Utilisateurs
+                Users
             </a>
         </li>
         <li class="nav-item {{ Request::is('admin/import') ? 'active' : '' }}">
             <a class="nav-link" href="{{ url("/admin/import") }}">
                 <i class="fas fa-database"></i>
-                Import de données
+                Data import
             </a>
         </li>
     </ul>
@@ -61,7 +61,7 @@
     <div class="center-align align-self-end mt-auto">
         <button type="button" class="btn btn-outline-secondary" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
             <i class="fas fa-sign-out-alt"></i>
-            Déconnection
+            Logout
         </button>
 
         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

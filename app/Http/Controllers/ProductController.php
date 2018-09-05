@@ -63,7 +63,7 @@ class ProductController extends Controller
         $product->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('admin/products')->with(['success' => "Le produit a bien été ajouté"]);
+        return redirect('admin/products')->with(['success' => "Product has been created."]);
     }
 
     /**
@@ -129,7 +129,7 @@ class ProductController extends Controller
         $product->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('admin/products')->with(['success' => "Le produit a bien été mis à jour"]);
+        return redirect('admin/products')->with(['success' => "Product has been updated."]);
     }
 
     /**
@@ -142,6 +142,6 @@ class ProductController extends Controller
     {
         $product = \App\Product::find($id);
         $product->delete();
-        return redirect('admin/products')->with('success','Le produit a bien été supprimé');
+        return redirect('admin/products')->with('success','Product has been deleted.');
     }
 }

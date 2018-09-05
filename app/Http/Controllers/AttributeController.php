@@ -56,7 +56,7 @@ class AttributeController extends Controller
         $attribute->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('admin/attributes')->with(['success' => "L'attribut a bien été ajouté"]);
+        return redirect('admin/attributes')->with(['success' => "Attribute has been created."]);
     }
 
     /**
@@ -114,7 +114,7 @@ class AttributeController extends Controller
         $attribute->save();
 
         //Le with va aller intégrer le tableau avec la clé "success" dans la variable de session
-        return redirect('admin/attributes')->with(['success' => "L'attribut a bien été mis à jour"]);
+        return redirect('admin/attributes')->with(['success' => "Attribute has been updated."]);
     }
 
     /**
@@ -127,6 +127,6 @@ class AttributeController extends Controller
     {
         $attribute = \App\Attribute::find($id);
         $attribute->delete();
-        return redirect('attributes')->with("success","L'attribut a bien été supprimé");
+        return redirect('attributes')->with("success","Attribute has been deleted.");
     }
 }

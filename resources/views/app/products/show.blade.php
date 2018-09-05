@@ -16,15 +16,24 @@
 
                 <div class="col-md-5 product-main">
                     <div class="w-100 mt-5">
-                        <img src="{{ asset('storage/'.$product->brand->url_logo) }}" alt="">
+                        <div class="right-align">
+                            <img class="product-brand-img ml-auto" src="{{ asset('storage/'.$product->brand->url_logo) }}" alt="logo {{$product->brand->name}}">
+                        </div>
                         <h1 class="product-title">{{ $product->name }}</h1>
                         <p class="text-muted product-category">{{ $product->category->name }}</p>
                         <p class="product-description">{{ $product->description }}</p>
 
                         <div class="d-flex justify-content-center flex-column center-align">
-                            <p class="product-price">{{ $product->price }} €</p>
-                            <a href="{{ $product->url_ecommerce }}" class="btn btn-primary">
-                                Commander sur connexing.fr
+                            @if(__('global.product_price') == 'true')
+                                <p class="product-price">{{ $product->price }} € {{ __('global.product_price_taxe') }}</p>
+                            @endif
+                            @if($product->url_ecommerce)
+                                <a href="{{ $product->url_ecommerce }}" class="btn btn-primary" target="_blank">
+                                    {{ __('global.product_link_connexing') }}
+                                </a>
+                            @endif
+                            <a href="{{ __('global.product_link_quotation_link') }}" class="btn btn-outline-primary mt-2" target="_blank">
+                                {{ __('global.product_link_quotation') }}
                             </a>
                         </div>
                     </div>

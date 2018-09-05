@@ -86,18 +86,20 @@ class AppProductController extends Controller
 
         $filters = [];
 
-        $i=0;
-
         // On boucle sur les attributs
         foreach ($category->attributes as $attribute) {
+
+
 
             // On regarde si il y a eu une valeur de passée en paramètre par rapport à l'attribut
             if($request->get($attribute->identification)) {
 
-                ++$i;
+                foreach ($request->get($attribute->identification) as $default_value) {
 
-                // On ajoute à la liste l'id de la valeur par défaut passée en paramètre
-                array_push($filters, $request->get($attribute->identification));
+                    // On ajoute à la liste l'id de la valeur par défaut passée en paramètre
+                    array_push($filters, $default_value);
+
+                }
 
             }
 
