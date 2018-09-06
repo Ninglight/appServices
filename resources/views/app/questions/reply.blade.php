@@ -171,11 +171,6 @@
         </div>
 
 
-
-
-
-
-
     @endslot
 
 @endcomponent

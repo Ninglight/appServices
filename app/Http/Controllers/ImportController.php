@@ -102,8 +102,9 @@ class ImportController extends Controller
 
         foreach ($columns as $column) {
 
-            // On ne recupère pas l'id, vu que c'est un incrément
+            // On ne recupère pas l'id, vu que c'est un incrément, et le prix et la marque id parce qu'on le gère dans les attributs
             if ($column->COLUMN_NAME != 'id') {
+
                 array_push($match_attributes, [
                     'name' => $column->COLUMN_NAME,
                     'source' => 'Product'
@@ -113,11 +114,16 @@ class ImportController extends Controller
         }
 
         foreach ($attributes as $attribute) {
-            array_push($match_attributes, [
-                'attribute_id' => $attribute->id,
-                'name' => $attribute->identification,
-                'source' => 'Attribute'
-            ]);
+
+            if($attribute->identification != 'brand' && $attribute->identification != 'price' ) {
+
+                array_push($match_attributes, [
+                    'attribute_id' => $attribute->id,
+                    'name' => $attribute->identification,
+                    'source' => 'Attribute'
+                ]);
+
+            }
         }
 
         return $match_attributes;
@@ -181,6 +187,8 @@ class ImportController extends Controller
                         // On match entre la colonne et le cellule de la ligne produit
                         if ($cell_key === $import_attribute_key) {
 
+                            dd($import_attribute_key);
+
                             // Si l'attribut est pour le produit
                             if ($import_attribute['source'] == 'Product') {
 
@@ -195,6 +203,7 @@ class ImportController extends Controller
                                         $injectable_product->$product_param = 0;
                                     }
 
+                                // Si le parametre produit est le prix, on créer aussi un attribut pour le prix
                                 } else {
 
                                     $injectable_product->$product_param = $cell;
@@ -208,10 +217,10 @@ class ImportController extends Controller
                                 // Si default_value est null on injecte pas dans la tableau
                                 if ($cell) {
 
-                                    $injectablea_product_value = new \App\ProductValue;
-                                    $injectablea_product_value->attribute_id = $import_attribute['attribute_id'];
-                                    $injectablea_product_value->default_value_id = $cell;
-                                    array_push($injectable_attributes, $injectablea_product_value);
+                                    $injectable_product_value = new \App\ProductValue;
+                                    $injectable_product_value->attribute_id = $import_attribute['attribute_id'];
+                                    $injectable_product_value->default_value_id = $cell;
+                                    array_push($injectable_attributes, $injectable_product_value);
 
                                 }
 
@@ -239,6 +248,9 @@ class ImportController extends Controller
         foreach ($injectable_products as $injectable_data) {
 
             try {
+
+                dd($injectable_data['product']);
+
                 $injectable_data['product']->save();
                 $injectable_data['product'] = \App\Product::where('constructor_reference', $injectable_data['product']->constructor_reference)->firstOrFail();
 

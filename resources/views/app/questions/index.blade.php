@@ -14,6 +14,7 @@
             <div class="container main-content my-auto pb-5">
                 <h1 class="lg-3 center-align mb-5">
                     @lang('global.category_baseline')
+
                 </h1>
 
 
@@ -33,6 +34,7 @@
                     @endforeach
 
                 </div>
+
 
             </div>
         </div>

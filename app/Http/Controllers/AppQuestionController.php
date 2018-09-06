@@ -14,6 +14,7 @@ class AppQuestionController extends Controller
      */
     public function selectCategories(Request $request)
     {
+
         $categories = \App\Category::all();
         return view('app.questions.index', ['categories' => $categories]);
     }
@@ -26,15 +27,13 @@ class AppQuestionController extends Controller
      */
     public function initUserPath(Request $request, $category_id)
     {
+
         $questions = \App\Question::findByCategory($category_id)->sortBy('order')->sortBy('id');
 
         foreach ($questions as $key=>$question) {
             $question->user_answers = [];
             $question->validate = false;
         }
-
-        // On regénère les données en session
-        $request->session()->flush();
 
         // Add to session variable
         $request->session()->put('questions', $questions);

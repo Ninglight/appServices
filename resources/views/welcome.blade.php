@@ -13,6 +13,7 @@
             <div class="container main-content welcome-content my-auto">
                 <h1 class="mb-3 left-align">
                     @lang('global.home_baseline')
+
                 </h1>
 
                 <a class="btn btn-info my-1" href="{{action('AppQuestionController@selectCategories')}}">
@@ -27,10 +28,6 @@
 
             </div>
         </div>
-
-
-
-
 
 
 
