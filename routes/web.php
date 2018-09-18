@@ -19,7 +19,9 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::get('questions/categories', 'AppQuestionController@selectCategories');
     Route::get('questions/init/{category_id}', 'AppQuestionController@initUserPath');
-    Route::post('questions/', 'AppQuestionController@updateUserPath');
+    Route::post('questions/next', 'AppQuestionController@updateUserPath');
+    Route::post('questions/back', 'AppQuestionController@changeCurrentUserPath');
+    Route::post('questions/skip', 'AppQuestionController@skipUserPath');
     Route::get('products/init/', 'AppProductController@select');
     Route::get('products/', 'AppProductController@index');
     Route::post('products/filters', 'AppProductController@updateFilters');

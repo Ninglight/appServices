@@ -76,12 +76,11 @@ class ProductValueController extends Controller
             // assignement unique
             if ($attribute->assignment_multiple == 0) {
 
-                if ($request->get($attribute->name) != 'null') {
+                if ($request->get($attribute->identification) != 'null' && $request->get($attribute->identification)) {
 
                     if (ProductValue::where('product_id', $product->id)->where('attribute_id', $attribute->id)->count() > 0) {
                         // Il existe un enregistrement avec ce produit et cet attribut
                         // On met à jour
-
                         $product_value = ProductValue::where('product_id', $product->id)->where('attribute_id', $attribute->id)->firstOrFail();
 
                         $product_value->default_value_id = $request->get($attribute->identification);
@@ -97,8 +96,6 @@ class ProductValueController extends Controller
                         $product_value->attribute_id = $attribute->id;
                         $product_value->default_value_id = $request->get($attribute->identification);
 
-
-
                         $product_value->save();
                     }
 
@@ -110,7 +107,7 @@ class ProductValueController extends Controller
                 // assignement multiple
             } else {
 
-                if($request->get($attribute->name)) {
+                if($request->get($attribute->identification)) {
 
                     $default_values = $request->get($attribute->identification);
 
@@ -120,7 +117,7 @@ class ProductValueController extends Controller
 
                     foreach ($default_values as $default_value) {
 
-                        if ($default_value != 'null') {
+                        if ($default_value != 'null' && $default_value) {
 
                             $product_value = new \App\ProductValue;
                             $product_value->product_id = $product->id;

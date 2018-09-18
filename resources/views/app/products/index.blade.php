@@ -32,22 +32,23 @@
                              data-parent="#accordionExample">
                             <div class="card-body">
 
-
                                 <div class="row d-flex justify-content-center">
 
                                     @foreach($category->attributes as $attribute)
 
-                                        @if($attribute->assignment_multiple == 0)
+                                        @if(count($attribute->default_values) < 2)
 
                                             <div class="col-lg-3 col-md-4 col-sm-6 form-group">
                                                 <label for="exampleFormControlSelect1">{{ $attribute->name }}</label><br>
                                                 <div class=" btn-group-toggle" data-toggle="buttons">
                                                     @foreach($attribute->default_values as $default_value)
+
                                                         <label class="btn btn-outline-info btn-radio @if($filters) @foreach($filters as $filter) {{ $default_value->id == $filter->id ? 'active' : '' }} @endforeach @endif">
                                                             <input type="radio" name="{{ $attribute->identification }}[{{ $default_value->id }}]"
                                                                    id="{{ $default_value->value }}" autocomplete="off"
                                                                    value={{ $default_value->id }} @if($filters) @foreach($filters as $filter) {{ $default_value->id == $filter->id ? 'checked' : '' }} @endforeach @endif> {{ $default_value->value }}
                                                         </label>
+
                                                     @endforeach
                                                 </div>
                                             </div>
@@ -58,11 +59,13 @@
                                                 <label for="exampleFormControlSelect1">{{ $attribute->name }}</label><br>
                                                 <div class=" btn-group-toggle" data-toggle="buttons">
                                                     @foreach($attribute->default_values as $default_value)
+
                                                         <label class="btn btn-outline-info btn-radio @if($filters) @foreach($filters as $filter) {{ $default_value->id == $filter->id ? 'active' : '' }} @endforeach @endif">
                                                             <input type="checkbox" name="{{ $attribute->identification }}[{{ $default_value->id }}]"
                                                                    id="{{ $default_value->value }}" autocomplete="off"
                                                                    value={{ $default_value->id }} @if($filters) @foreach($filters as $filter) {{ $default_value->id == $filter->id ? 'checked' : '' }} @endforeach @endif> {{ $default_value->value }}
                                                         </label>
+
                                                     @endforeach
                                                 </div>
                                             </div>

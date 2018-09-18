@@ -39,8 +39,6 @@ class ProductValue extends Model
     public static function getProductValueByProductByAttribute($product_id, $attribute_id) {
         $product_values = ProductValue::where('product_id', $product_id)->where('attribute_id', $attribute_id)->get();
 
-        dd($product_values);
-
         if($product_values) {
             return $product_values;
         } else {

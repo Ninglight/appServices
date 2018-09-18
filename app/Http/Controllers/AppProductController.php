@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 class AppProductController extends Controller
 {
 
-
     /**
      * Display a listing of the resource.
      *
@@ -40,11 +39,9 @@ class AppProductController extends Controller
         // Si on a des filtres, on va pouvoir filtrer notre liste de produit
         if (isset($filters)){
 
-
             foreach ($filters as $key => $filter) {
                 $filters[$key] = \App\DefaultValue::find($filter);
             }
-
 
             // On boucle sur la liste de produit
             foreach($products as $key => $product) {
@@ -54,6 +51,8 @@ class AppProductController extends Controller
 
                 // On boucle sur les filtres = default_value
                 foreach ($filters as $filter){
+
+                    $product->product_values->firstWhere('default_value_id', $filter->id);
 
                     // On boucle sur les valeurs du produit
                     foreach ($product->product_values as $product_value) {
@@ -69,6 +68,8 @@ class AppProductController extends Controller
 
                 }
 
+
+
                 if($product->filtered != count($filters)) {
                     unset($products[$key]);
                 }
@@ -76,6 +77,7 @@ class AppProductController extends Controller
             }
 
         }
+
 
         return view('app.products.index', ['category' => $category, 'products' => $products, 'filters' => $filters]);
     }

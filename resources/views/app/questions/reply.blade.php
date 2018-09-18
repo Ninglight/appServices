@@ -56,7 +56,7 @@
 
                 <h1 class="lg-3 center-align mb-3">
                     {{ $current_question->value }}
-                    @if($current_question->attribute->assignment_multiple == 1)
+                    @if(count($current_question->answers) > 3)
                         <br><span class="text-minimize">@lang('global.questions_multiple_announce')</span>
                     @endif
                 </h1>
@@ -68,10 +68,12 @@
 
                         @foreach($current_question->answers->sortBy('order') as $answer)
 
-                            <form class="my-2" method="post" action="{{ action('AppQuestionController@updateUserPath') }}" enctype="multipart/form-data">
+                            <form class="my-2" method="post"
+                                  action="{{ action('AppQuestionController@updateUserPath') }}"
+                                  enctype="multipart/form-data">
                                 @csrf
                                 <input name="current_question" type="hidden" value="{{ $current_question->id }}">
-                                <input name="answer" type="hidden" value="{{ $answer->id }}">
+                                <input name="answers[{{ $answer->id }}]" type="hidden" value="{{ $answer->id }}">
 
                                 <button class="btn btn-primary mx-2">
                                     {{ $answer->value }}
@@ -89,13 +91,14 @@
                         @csrf
                         <input name="current_question" type="hidden" value="{{ $current_question->id }}">
 
-                        <div class="row d-flex justify-content-center">
+                        <div class="row d-flex justify-content-center options">
 
                             @foreach($current_question->answers as $answer)
 
                                 <div class="btn-group-toggle" data-toggle="buttons">
                                     <label class="btn btn-outline-primary mx-2">
-                                        <input type="checkbox" autocomplete="off" name="answers[{{ $answer->id }}]" value="{{ $answer->id }}"> {{ $answer->value }}
+                                        <input type="checkbox" autocomplete="off" id="" name="answers[]"
+                                               value="{{ $answer->id }}" required> {{ $answer->value }}
                                     </label>
                                 </div>
 
@@ -104,7 +107,7 @@
                         </div>
 
                         <div class="d-flex justify-content-center mt-4">
-                            <button class="btn btn-primary mx-2">
+                            <button class="btn btn-primary mx-2" id="validate_button">
                                 @lang('global.questions_multiple_validate')
                             </button>
 
@@ -120,7 +123,7 @@
                           enctype="multipart/form-data">
                         @csrf
                         <input name="current_question" type="hidden" value="{{ $current_question->id }}">
-                        <input name="answer" type="hidden" value="null">
+                        <input name="answers[{{ $answer->id }}]" type="hidden" value="null">
 
                         <button class="btn btn-link mx-2">
                             @lang('global.questions_skip')
@@ -132,10 +135,10 @@
 
                 <div class="container question-navigation d-flex flex-row justify-content-center align-items-start">
 
-                    <form method="post" action="{{action('AppQuestionController@updateUserPath')}}"
+                    <form method="post" action="{{action('AppQuestionController@changeCurrentUserPath')}}"
                           enctype="multipart/form-data">
                         @csrf
-                        <input name="current_question" type="hidden" value="{{ $current_question->id }}">
+                        <input name="target_question" type="hidden" value="{{ $current_question->order_path - 1 }}">
 
                         <button type="submit" class="btn btn-link">
                             @lang('global.questions_return')
@@ -144,25 +147,31 @@
 
                     <div class="question-navigation-bullet">
                         <ul>
-                            @foreach($questions as $question)
+                            @foreach($questions as $key => $question)
                                 <li>
-                                    <form method="post" action="{{action('AppQuestionController@updateUserPath')}}"
+                                    <form method="post" action="{{action('AppQuestionController@changeCurrentUserPath')}}"
                                           enctype="multipart/form-data">
                                         @csrf
-                                        <input name="current_question" type="hidden" value="{{ $current_question->id }}">
+                                        <input name="target_question" type="hidden" value="{{ $key + 1 }}">
 
-                                        <a class={{ $question->id == $current_question->id ? "is-active" : "" }} href=""></a>
+                                        <button type="submit" class="{{ $question->id == $current_question->id ? 'is-active' : '' }}"></button>
                                     </form>
                                 </li>
                             @endforeach
                         </ul>
-                        <p>1/{{ count($questions) }}</p>
+                        <p>{{ $current_question->order_path }}/{{ count($questions) }}</p>
                     </div>
 
 
-                    <a class="btn btn-link">
-                        @lang('global.questions_cancel')
-                    </a>
+                    <form method="post" action="{{action('AppQuestionController@skipUserPath')}}"
+                          enctype="multipart/form-data">
+                        @csrf
+
+                        <button type="submit" class="btn btn-link">
+                            @lang('global.questions_cancel')
+                        </button>
+                    </form>
+
 
                 </div>
 

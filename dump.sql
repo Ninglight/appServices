@@ -44,7 +44,7 @@ INSERT INTO `answers` (`id`, `question_id`, `default_value_id`, `value`, `create
 (13, 4, 6, 'Je suis mobile', '2018-09-03 06:38:02', '2018-09-03 06:38:02'),
 (14, 1, 9, 'Intensive (Plus de 11h)', '2018-09-03 06:41:55', '2018-09-03 06:50:06'),
 (15, 2, 12, 'Très grande autonomie (+150h)', '2018-09-03 06:46:00', '2018-09-03 06:47:00'),
-(16, 2, 10, 'Peu d\'autonomie (40h)', '2018-09-03 06:46:28', '2018-09-03 06:47:28'),
+(16, 2, 10, 'Peu dautonomie (40h)', '2018-09-03 06:46:28', '2018-09-03 06:47:28'),
 (17, 2, 11, 'Grande autonomie (100h)', '2018-09-03 06:47:50', '2018-09-03 06:47:50');
 
 -- --------------------------------------------------------
@@ -72,7 +72,7 @@ INSERT INTO `attributes` (`id`, `name`, `category_id`, `identification`, `assign
 (2, 'Autonomie en veille', 1, 'autonomie_veille', 0, '2018-08-27 07:32:49', '2018-08-27 07:32:49'),
 (3, 'Filaire', 1, 'filaire', 0, '2018-08-31 05:17:59', '2018-08-31 05:17:59'),
 (4, 'Écran', 2, 'ecran', 0, '2018-08-31 07:28:51', '2018-08-31 07:28:51'),
-(5, 'Nombre d\'écouteurs', 1, 'nombre_ecouteurs', 0, '2018-09-03 13:08:00', '2018-09-03 13:08:00'),
+(5, 'Nombre découteurs', 1, 'nombre_ecouteurs', 0, '2018-09-03 13:08:00', '2018-09-03 13:08:00'),
 (6, 'Compatibilité', 1, 'compatibilites_casque', 1, '2018-09-03 13:08:21', '2018-09-03 13:08:21'),
 (7, 'Connexion', 1, 'connexion_casque', 1, '2018-09-03 13:08:43', '2018-09-03 13:08:43'),
 (8, 'Prix', 1, 'price', 0, '2018-09-03 13:30:57', '2018-09-03 13:30:57');
@@ -534,6 +534,9 @@ ALTER TABLE `answers`
 --
 ALTER TABLE `attributes`
   ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `attributes`
+  ADD FOREIGN KEY (`category_id`) REFERENCES `categories`(`id`);
 
 --
 -- Index pour la table `brands`

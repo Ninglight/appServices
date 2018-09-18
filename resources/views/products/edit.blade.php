@@ -127,12 +127,12 @@
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 
-
                         <form method="post"
                               action="{{ action('ProductValueController@update', $product->id) }} }}"
                               enctype="multipart/form-data">
                             @csrf
                             <input name="_method" type="hidden" value="PATCH">
+
 
 
                             <div class="row">
@@ -145,7 +145,7 @@
                                         <select class="form-control" id="exampleFormControlSelect1" name="{{ $attribute->identification }}">
                                             <option value="null">Unspecified</option>
                                             @foreach($attribute->default_values as $default_value)
-                                                <option value="{{ $default_value->id }}">{{ $default_value->value }}</option>
+                                                <option value="{{ $default_value->id }}" @foreach($product->product_values as $product_value) {{$product_value->default_value_id == $default_value->id ? 'selected' : ''}} @endforeach>{{ $default_value->value }}</option>
                                             @endforeach
                                         </select>
                                     </div>
@@ -157,7 +157,7 @@
                                         <select multiple class="form-control" id="exampleFormControlSelect2" name="{{ $attribute->identification }}[]">
                                             <option value="null">Unspecified</option>
                                             @foreach($attribute->default_values as $default_value)
-                                                <option value="{{ $default_value->id }}">{{ $default_value->value }}</option>
+                                                <option value="{{ $default_value->id }}"  @foreach($product->product_values as $product_value) {{$product_value->default_value_id == $default_value->id ? 'selected' : ''}} @endforeach>{{ $default_value->value }}</option>
                                             @endforeach
                                         </select>
                                     </div>

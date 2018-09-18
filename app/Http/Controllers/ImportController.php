@@ -67,7 +67,7 @@ class ImportController extends Controller
             }
 
             // On récupère que les 10 premiers histoires de tester.
-            $rows = array_slice($stack, 0, 50);
+            $rows = array_slice($stack, 0, 10);
 
             $request->session()->put('import', [
                 'filename' => $request->file('file')->getClientOriginalName(),
@@ -120,7 +120,8 @@ class ImportController extends Controller
                 array_push($match_attributes, [
                     'attribute_id' => $attribute->id,
                     'name' => $attribute->identification,
-                    'source' => 'Attribute'
+                    'source' => 'Attribute',
+                    'assignment_multiple' => $attribute->assignment_multiple
                 ]);
 
             }
@@ -173,7 +174,6 @@ class ImportController extends Controller
 
             $injectable_product = new \App\Product;
             $injectable_product->category_id = $category_id;
-            $injectable_product->brand_id = 4;
 
             $injectable_attributes = [];
 
@@ -186,8 +186,6 @@ class ImportController extends Controller
 
                         // On match entre la colonne et le cellule de la ligne produit
                         if ($cell_key === $import_attribute_key) {
-
-                            dd($import_attribute_key);
 
                             // Si l'attribut est pour le produit
                             if ($import_attribute['source'] == 'Product') {
@@ -204,6 +202,52 @@ class ImportController extends Controller
                                     }
 
                                 // Si le parametre produit est le prix, on créer aussi un attribut pour le prix
+                                } elseif ($product_param == 'brand_id') {
+
+                                    // On recherche l'id de la marque passé en paramètre
+                                    $brand = \App\Brand::where('name', $cell)->firstOrFail();
+                                    $brand_default_value = \App\DefaultValue::where('value', $cell)->firstOrFail();
+
+                                    $injectable_product->$product_param = $brand->id;
+
+                                    $injectable_product_value = new \App\ProductValue;
+                                    $injectable_product_value->attribute_id = $brand_default_value->attribute->id;
+                                    $injectable_product_value->default_value_id = $brand_default_value->identification;
+                                    array_push($injectable_attributes, $injectable_product_value);
+
+                                // Si le parametre produit est la marque, on créer aussi un attribut pour le marque
+                                } elseif ($product_param == 'price') {
+
+                                    $injectable_product->$product_param = $cell;
+
+                                    $price_attribute = \App\Attribute::where('identification', 'price')->firstOrFail();
+
+                                    if($cell < 100) {
+
+                                        $injectable_product_value = new \App\ProductValue;
+                                        $injectable_product_value->attribute_id = $price_attribute->id;
+                                        $injectable_product_value->default_value_id = 100;
+
+                                    } elseif($cell > 100 && $cell < 200) {
+
+                                        $injectable_product_value = new \App\ProductValue;
+                                        $injectable_product_value->attribute_id = $price_attribute->id;
+                                        $injectable_product_value->default_value_id = 150;
+
+                                    } elseif($cell > 200) {
+
+                                        $injectable_product_value = new \App\ProductValue;
+                                        $injectable_product_value->attribute_id = $price_attribute->id;
+                                        $injectable_product_value->default_value_id = 200;
+
+                                    }
+
+                                    if($injectable_product_value->default_value_id) {
+
+                                        array_push($injectable_attributes, $injectable_product_value);
+
+                                    }
+
                                 } else {
 
                                     $injectable_product->$product_param = $cell;
@@ -221,6 +265,37 @@ class ImportController extends Controller
                                     $injectable_product_value->attribute_id = $import_attribute['attribute_id'];
                                     $injectable_product_value->default_value_id = $cell;
                                     array_push($injectable_attributes, $injectable_product_value);
+
+                                    /*// Si on a qu'un seul assignement, on va juste préparer le product value
+                                    if ($import_attribute['assignment_multiple'] == 0) {
+
+
+
+                                    // Si on a plusieurs assignement, on va bouclé sur les valeurs par défaut de l'attribut pour retrouver ce qui est dans la cellule
+                                    } else {
+
+                                        $attribute = \App\Attribute::where('identification', $import_attribute['name'])->firstOrFail();
+
+                                        if($attribute) {
+
+                                            foreach ($attribute->default_values as $default_value) {
+
+                                                if(strpos($cell, $default_value->identification) == true || $cell == $default_value->identification) {
+
+                                                    $injectable_product_value = new \App\ProductValue;
+                                                    $injectable_product_value->attribute_id = $import_attribute['attribute_id'];
+                                                    $injectable_product_value->default_value_id = $default_value->id;
+                                                    array_push($injectable_attributes, $injectable_product_value);
+
+                                                }
+
+                                            }
+
+                                        }
+
+                                    }*/
+
+
 
                                 }
 
@@ -244,15 +319,21 @@ class ImportController extends Controller
 
         }
 
-
         foreach ($injectable_products as $injectable_data) {
 
             try {
 
-                dd($injectable_data['product']);
+                $product_tmp = \App\Product::where('constructor_reference', $injectable_data['product']->constructor_reference)->firstOrFail();
 
-                $injectable_data['product']->save();
+                if($product_tmp->id) {
+                    $injectable_data['product']->id = $product_tmp->id;
+                    $injectable_data['product']->save();
+                } else {
+                    $injectable_data['product']->save();
+                }
+
                 $injectable_data['product'] = \App\Product::where('constructor_reference', $injectable_data['product']->constructor_reference)->firstOrFail();
+                array_push($sucess, $injectable_data['product']);
 
             } catch (\Exception $e) {
 
@@ -267,6 +348,8 @@ class ImportController extends Controller
 
                 $injectable_data['product'] = \App\Product::where('constructor_reference', $injectable_data['product']->constructor_reference)->firstOrFail();
             }
+
+
 
             // Duplication d'une clé unique, donc on test quand même d'ajouter les attributs
             if (!$error['id'] = 23000) {
@@ -293,8 +376,6 @@ class ImportController extends Controller
                         }
 
                     }
-
-                    dd($product_values);
 
 
                 } else {
