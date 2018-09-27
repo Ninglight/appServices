@@ -14,7 +14,7 @@ class ProductController extends Controller
     public function index()
     {
         $products = \App\Product::all();
-        return view('products.index', ['products' => $products]);
+        return view('admin.products.index', ['products' => $products]);
     }
 
     /**
@@ -26,7 +26,7 @@ class ProductController extends Controller
     {
         $brands = \App\Brand::all();
         $categories = \App\Category::all();
-        return view('products.create', ['brands' => $brands, 'categories' => $categories]);
+        return view('admin.products.create', ['brands' => $brands, 'categories' => $categories]);
     }
 
     /**
@@ -75,7 +75,7 @@ class ProductController extends Controller
     public function show($id)
     {
         $product = \App\Product::find($id);
-        return view('products.show', ['product' => $product]);
+        return view('admin.products.show', ['product' => $product]);
     }
 
     /**
@@ -90,7 +90,7 @@ class ProductController extends Controller
         $brands = \App\Brand::all();
         $categories = \App\Category::all();
         $product_values = \App\ProductValue::getProductValueByProduct($product->id);
-        return view('products.edit', ['product' => $product, 'brands' => $brands, 'categories' => $categories, 'product_values' => $product_values]);
+        return view('admin.products.edit', ['product' => $product, 'brands' => $brands, 'categories' => $categories, 'product_values' => $product_values]);
     }
 
     /**

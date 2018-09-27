@@ -12,6 +12,7 @@ Les familles de produits vendus par Connexing ont trop souvent des termes spéci
 - Run __composer install__
 - Run __php artisan key:generate__
 - Run __php artisan migrate --seed__
+- Run __php artisan storage:link__
 - That's it - load the homepage
 
 ## Technologies used

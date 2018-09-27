@@ -53,7 +53,6 @@ try {
     });
 
     var requiredCheckboxes = $('.options :checkbox[required]');
-    console.log(requiredCheckboxes);
     requiredCheckboxes.change(function(){
       if(requiredCheckboxes.is(':checked')) {
         requiredCheckboxes.removeAttr('required');

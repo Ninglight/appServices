@@ -19,7 +19,7 @@ class ImportController extends Controller
     {
 
         $categories = \App\Category::all();
-        return view('import.index', ['categories' => $categories]);
+        return view('admin.import.index', ['categories' => $categories]);
     }
 
     /**
@@ -83,7 +83,7 @@ class ImportController extends Controller
         // Préparation des attributs pour faire correspondre l'import
         $match_attributes = $this->getMatchingAttributes();
 
-        return view('import.results', compact('csv_header_fields', 'rows', 'match_attributes'));
+        return view('admin.import.results', compact('csv_header_fields', 'rows', 'match_attributes'));
 
     }
 
@@ -415,7 +415,7 @@ class ImportController extends Controller
 
         }
 
-        return view('import.sucess', ['import_errors' => $errors, 'import_sucess' => $sucess]);
+        return view('admin.import.sucess', ['import_errors' => $errors, 'import_sucess' => $sucess]);
     }
 
 }

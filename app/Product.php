@@ -28,6 +28,7 @@ class Product extends Model
         return $this->belongsTo('App\Brand');
     }
 
+
     // Un produit a plusieurs valeurs d'attribut associés
     public function product_values() {
         return $this->hasMany('App\ProductValue');

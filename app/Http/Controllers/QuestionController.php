@@ -14,7 +14,7 @@ class QuestionController extends Controller
     public function index()
     {
         $questions = \App\Question::all();
-        return view('questions.index', ['questions' => $questions]);
+        return view('admin.questions.index', ['questions' => $questions]);
     }
 
     /**
@@ -27,7 +27,7 @@ class QuestionController extends Controller
         $categories = \App\Category::all();
         $attributes = \App\Attribute::all();
         $numberQuestion = \App\Question::countQuestion();
-        return view('questions.create', ['attributes' => $attributes, 'categories' => $categories, 'numberQuestion' => $numberQuestion]);
+        return view('admin.questions.create', ['attributes' => $attributes, 'categories' => $categories, 'numberQuestion' => $numberQuestion]);
     }
 
     /**
@@ -66,7 +66,7 @@ class QuestionController extends Controller
     public function show($id)
     {
         $question = \App\Question::find($id);
-        return view('questions.show', ['question' => $question]);
+        return view('admin.questions.show', ['question' => $question]);
     }
 
     /**
@@ -82,7 +82,7 @@ class QuestionController extends Controller
         $attributes = \App\Attribute::all();
         $default_values = \App\DefaultValue::all();
         $numberQuestion = \App\Question::countQuestion();
-        return view('questions.edit', ['question' => $question, 'attributes' => $attributes, 'categories' => $categories, 'default_values' => $default_values, 'numberQuestion' => $numberQuestion]);
+        return view('admin.questions.edit', ['question' => $question, 'attributes' => $attributes, 'categories' => $categories, 'default_values' => $default_values, 'numberQuestion' => $numberQuestion]);
     }
 
     /**

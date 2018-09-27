@@ -15,7 +15,7 @@ class BrandController extends Controller
     public function index()
     {
         $brands = \App\Brand::all();
-        return view('brands.index', ['brands' => $brands]);
+        return view('admin.brands.index', ['brands' => $brands]);
     }
 
     /**
@@ -25,7 +25,7 @@ class BrandController extends Controller
      */
     public function create()
     {
-        return view('brands.create');
+        return view('admin.brands.create');
     }
 
     /**
@@ -58,7 +58,7 @@ class BrandController extends Controller
     public function show($id)
     {
         $brand = \App\Brand::find($id);
-        return view('brands.show', ['brand' => $brand]);
+        return view('admin.brands.show', ['brand' => $brand]);
     }
 
     /**
@@ -70,7 +70,7 @@ class BrandController extends Controller
     public function edit($id)
     {
         $brand = \App\Brand::find($id);
-        return view('brands.edit', ['brand' => $brand]);
+        return view('admin.brands.edit', ['brand' => $brand]);
     }
 
     /**
@@ -119,7 +119,12 @@ class BrandController extends Controller
         return redirect('admin/brands')->with('success','Brand has been deleted.');
     }
 
-
+    /**
+     * Manage storage logo in public directory.
+     *
+     * @param  string  $logo
+     * @return $path
+     */
     public function manageLogoBrand($logo)
     {
         $path=$logo->store('public/brand');

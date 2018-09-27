@@ -14,7 +14,7 @@ class AttributeController extends Controller
     public function index()
     {
         $attributes = \App\Attribute::all();
-        return view('attributes.index', ['attributes' => $attributes]);
+        return view('admin.attributes.index', ['attributes' => $attributes]);
     }
 
     /**
@@ -25,7 +25,7 @@ class AttributeController extends Controller
     public function create()
     {
         $categories = \App\Category::all();
-        return view('attributes.create', ['categories' => $categories]);
+        return view('admin.attributes.create', ['categories' => $categories]);
     }
 
     /**
@@ -68,7 +68,7 @@ class AttributeController extends Controller
     public function show($id)
     {
         $attribute = \App\Attribute::find($id);
-        return view('attributes.show', ['attribute' => $attribute]);
+        return view('admin.attributes.show', ['attribute' => $attribute]);
     }
 
     /**
@@ -82,7 +82,7 @@ class AttributeController extends Controller
         $attribute = \App\Attribute::find($id);
         $categories = \App\Category::all();
 
-        return view('attributes.edit', ['attribute' => $attribute, 'categories' => $categories]);
+        return view('admin.attributes.edit', ['attribute' => $attribute, 'categories' => $categories]);
     }
 
     /**

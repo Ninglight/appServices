@@ -19,6 +19,8 @@ class Brand extends Model
 
     // Un produit est affecté à une categorie
     public function products() {
+
+
         return $this->hasMany('App\Product');
     }
 
@@ -30,3 +32,4 @@ class Brand extends Model
         });
     }
 }
+

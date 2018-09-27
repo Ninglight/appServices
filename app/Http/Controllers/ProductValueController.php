@@ -41,7 +41,7 @@ class ProductValueController extends Controller
     public function show($id)
     {
         $product_value = \App\ProductValue::find($id);
-        return view('product_values.show', ['product_value' => $product_value]);
+        return view('admin.product_values.show', ['product_value' => $product_value]);
     }
 
     /**
@@ -55,7 +55,7 @@ class ProductValueController extends Controller
         $product_value = \App\ProductValue::find($id);
         $default_values = \App\DefaultValue::all();
         $products = \App\Product::all();
-        return view('default_values.edit', ['product_value' => $product_value, 'default_values' => $default_values, 'products' => $products]);
+        return view('admin.default_values.edit', ['product_value' => $product_value, 'default_values' => $default_values, 'products' => $products]);
     }
 
     /**

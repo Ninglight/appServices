@@ -154,7 +154,6 @@ class AppQuestionController extends Controller
 
         }
 
-
     }
 
     /**
@@ -193,6 +192,10 @@ class AppQuestionController extends Controller
             }
 
         }
+
+
+
+
 
         $category = \App\Category::find($questions[0]->category);
 
